@@ -1,0 +1,126 @@
+.flowing-timeline-container {
+    position: relative;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem 0;
+}
+
+.timeline-line-bg {
+    position: absolute;
+    left: 40px;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background-color: var(--color-gray-200);
+    z-index: 1;
+}
+
+.timeline-line-progress {
+    position: absolute;
+    left: 40px;
+    top: 0;
+    width: 2px;
+    background: linear-gradient(180deg, var(--color-primary) 0%, #60a5fa 100%);
+    z-index: 2;
+    transition: height 0.1s ease-out;
+    box-shadow: 0 0 10px rgba(0, 82, 255, 0.5);
+}
+
+.timeline-items {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    position: relative;
+    z-index: 3;
+}
+
+.timeline-item {
+    display: flex;
+    gap: 3rem;
+    opacity: 0.4;
+    transform: translateY(20px);
+    transition: all 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.timeline-item.active {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.timeline-node {
+    width: 80px;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    z-index: 4;
+}
+
+.timeline-dot {
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background-color: var(--color-white);
+    border: 3px solid var(--color-gray-300);
+    margin-top: 10px;
+    transition: all 0.4s ease;
+}
+
+.timeline-item.active .timeline-dot {
+    border-color: var(--color-primary);
+    background-color: var(--color-primary);
+    box-shadow: 0 0 0 4px rgba(0, 82, 255, 0.2);
+}
+
+.timeline-content {
+    flex: 1;
+    background: var(--color-white);
+    border: 1px solid var(--color-gray-200);
+    padding: 2rem;
+    border-radius: 16px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.03);
+    transition: all 0.4s ease;
+}
+
+.timeline-item.active .timeline-content {
+    border-color: rgba(0, 82, 255, 0.2);
+    box-shadow: 0 15px 40px rgba(0, 82, 255, 0.08);
+}
+
+.timeline-number {
+    font-size: 1.5rem;
+    font-weight: 800;
+    color: var(--color-primary);
+    margin-bottom: 0.5rem;
+}
+
+.timeline-title {
+    font-size: 1.4rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+    color: var(--color-text-main);
+}
+
+.timeline-desc {
+    color: var(--color-gray-600);
+    line-height: 1.6;
+    font-size: 1.05rem;
+}
+
+@media (max-width: 600px) {
+    .timeline-line-bg,
+    .timeline-line-progress {
+        left: 20px;
+    }
+    
+    .timeline-item {
+        gap: 1.5rem;
+    }
+    
+    .timeline-node {
+        width: 40px;
+    }
+    
+    .timeline-content {
+        padding: 1.5rem;
+    }
+}

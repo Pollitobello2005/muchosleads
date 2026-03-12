@@ -1,0 +1,83 @@
+.pricing-premium-section {
+    background-color: var(--color-bg-light);
+    padding: 8rem 5%;
+}
+
+.pricing-premium-wrapper {
+    background-color: var(--color-gray-50);
+    border: 1px solid var(--color-gray-100);
+    border-radius: 1rem; /* rounded-2xl approximation */
+    padding: 6rem 1.5rem; /* py-24 px-6 approximation */
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: center;
+    box-shadow: none; /* explicitly request no heavy shadows */
+}
+
+.pricing-premium-title {
+    font-size: 2.5rem;
+    font-weight: 800; /* font-bold */
+    color: var(--color-gray-900, #111827); /* text-gray-900 */
+    margin-bottom: 1.5rem;
+    line-height: 1.1;
+    font-family: var(--font-primary, inherit);
+}
+
+.pricing-premium-title .text-secondary {
+    color: var(--color-black);
+}
+
+@media (min-width: 768px) {
+    .pricing-premium-title {
+        font-size: 3.5rem; /* md:text-5xl approximation */
+    }
+}
+
+.pricing-premium-desc {
+    font-size: 1.125rem; /* text-lg */
+    color: var(--color-gray-600);
+    max-width: 42rem; /* max-w-2xl */
+    margin: 1rem auto 3rem auto; /* mx-auto mt-4 */
+    line-height: 1.6;
+}
+
+@media (min-width: 768px) {
+    .pricing-premium-desc {
+        font-size: 1.25rem; /* md:text-xl */
+    }
+}
+
+.pricing-premium-highlight {
+    background-color: #eff6ff; /* bg-blue-50 */
+    color: #1d4ed8; /* text-blue-700 */
+    padding: 1.25rem 2rem;
+    border-radius: 0.75rem;
+    display: inline-block;
+    font-size: 1.05rem;
+    font-weight: 500;
+    margin-bottom: 3.5rem;
+    border: 1px solid #bfdbfe; /* subtle blue border */
+    line-height: 1.5;
+}
+
+.pricing-premium-highlight strong {
+    font-weight: 800;
+    font-size: 1.2rem;
+    color: #1e3a8a; /* darker blue for the price */
+}
+
+.pricing-premium-cta .btn-large {
+    font-size: 1.125rem;
+    padding: 1.25rem 3rem;
+    font-weight: 600; /* font-semibold */
+    border-radius: 0.5rem;
+    background-color: #2563eb; /* bg-blue-600 */
+    color: white;
+    box-shadow: 0 4px 14px rgba(37, 99, 235, 0.2);
+}
+
+.pricing-premium-cta .btn-large:hover {
+    background-color: #1d4ed8; /* hover:bg-blue-700 */
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(37, 99, 235, 0.3);
+}

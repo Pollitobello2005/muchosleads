@@ -1,0 +1,39 @@
+.floating-wa-btn {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    background-color: #25D366; /* WhatsApp Green */
+    color: white;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 12px 24px;
+    border-radius: 50px;
+    font-size: 1.05rem;
+    font-weight: 700;
+    text-decoration: none;
+    box-shadow: 0 4px 14px rgba(37, 211, 102, 0.4);
+    z-index: 9999;
+    transition: transform 0.2s ease, box-shadow 0.2s ease, background-color 0.2s ease;
+    font-family: var(--font-primary, inherit);
+}
+
+.floating-wa-btn:hover {
+    transform: translateY(-3px) scale(1.02);
+    box-shadow: 0 6px 20px rgba(37, 211, 102, 0.5);
+    background-color: #20b858;
+}
+
+.wa-icon {
+    width: 24px;
+    height: 24px;
+}
+
+@media (max-width: 768px) {
+    .floating-wa-btn {
+        bottom: 20px;
+        right: 20px;
+        padding: 10px 20px;
+        font-size: 0.95rem;
+    }
+}

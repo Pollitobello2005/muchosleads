@@ -1,0 +1,53 @@
+.navbar-exact {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.75);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    z-index: 1000;
+    border-bottom: 1px solid var(--color-gray-200);
+    padding: 1rem 0;
+    transition: all 0.3s ease;
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo-link {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+.nav-logo-img {
+    height: 40px; /* Adjust based on exact dimensions */
+    width: auto;
+    object-fit: contain;
+}
+
+.nav-links-exact {
+    display: flex;
+    gap: 2.5rem;
+}
+
+.nav-links-exact a {
+    color: var(--color-gray-600);
+    text-decoration: none;
+    font-size: 0.95rem;
+    font-weight: 600;
+    transition: color 0.2s ease;
+}
+
+.nav-links-exact a:hover {
+    color: var(--color-primary);
+}
+
+@media (max-width: 900px) {
+    .desktop-only {
+        display: none;
+    }
+}

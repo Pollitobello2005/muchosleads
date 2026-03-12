@@ -1,0 +1,35 @@
+.muchos-logo {
+    display: inline-flex;
+    align-items: baseline;
+    font-weight: 800;
+    color: currentColor;
+    letter-spacing: -0.05em;
+    user-select: none;
+    line-height: 1;
+}
+
+.muchos-logo .logo-part {
+    display: inline-block;
+}
+
+.muchos-logo .u-part {
+    position: relative;
+    display: inline-block;
+}
+
+.muchos-logo .magnet-tip {
+    position: absolute;
+    top: 0.26em; /* Adjust to sit on top of the 'u' stems */
+    width: 0.16em;
+    height: 0.14em;
+    background-color: var(--color-primary);
+    border-radius: 2px 2px 0 0;
+}
+
+.muchos-logo .magnet-tip.left {
+    left: 0.03em; /* Left stem */
+}
+
+.muchos-logo .magnet-tip.right {
+    right: 0.03em; /* Right stem */
+}

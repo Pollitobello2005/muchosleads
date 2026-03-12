@@ -1,0 +1,26 @@
+.spotlight-card-wrapper {
+    position: relative;
+    overflow: hidden;
+    background-color: var(--color-white);
+    border: 1px solid var(--color-gray-200);
+    transition: border-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.spotlight-effect {
+    pointer-events: none;
+    position: absolute;
+    inset: 0;
+    transition: opacity 0.3s ease;
+    z-index: 0;
+}
+
+.spotlight-card-wrapper > * {
+    position: relative;
+    z-index: 1;
+}
+
+.spotlight-card-wrapper:hover {
+    border-color: rgba(0, 82, 255, 0.3);
+    transform: translateY(-4px);
+    box-shadow: 0 15px 40px rgba(0, 82, 255, 0.08);
+}

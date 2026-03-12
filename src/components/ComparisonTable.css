@@ -1,0 +1,184 @@
+.comparison-section {
+    background-color: var(--color-bg-light);
+    padding: 6rem 5%;
+}
+
+.table-wrapper {
+    max-width: 1100px;
+    margin: 0 auto;
+    overflow-x: hidden;
+    background: var(--color-white);
+    border-radius: 20px;
+    box-shadow: 0 4px 60px rgba(0, 0, 0, 0.04);
+    border: 1px solid var(--color-gray-200);
+}
+
+.comparison-table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+    text-align: center;
+    table-layout: fixed;
+}
+
+.comparison-table th {
+    padding: 2rem 1rem;
+    font-weight: 700;
+    font-size: 1rem;
+    color: var(--color-text-main);
+    border-bottom: 2px solid var(--color-gray-200);
+    vertical-align: middle;
+}
+
+.comparison-table td {
+    padding: 1.25rem 1rem;
+    border-bottom: 1px solid var(--color-gray-100);
+    transition: background-color 0.2s ease;
+    vertical-align: middle;
+}
+
+.comparison-table tbody tr:last-child td {
+    border-bottom: none;
+}
+
+.comparison-table tbody tr:hover td:not(.highlight-cell) {
+    background-color: var(--color-gray-50);
+}
+
+.feature-col {
+    text-align: left !important;
+    font-weight: 600;
+    color: var(--color-text-main);
+    width: 32%;
+    font-size: 1rem;
+    padding-left: 2rem !important;
+}
+
+.comparison-table th.feature-col {
+    color: var(--color-gray-600);
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+.highlight-col {
+    background: linear-gradient(180deg, rgba(0, 82, 255, 0.05) 0%, rgba(0, 82, 255, 0.0) 100%);
+    position: relative;
+    z-index: 10;
+    width: 30%;
+    border-left: 2px solid var(--color-primary);
+    border-right: 2px solid var(--color-primary);
+    border-top: 2px solid var(--color-primary);
+    border-top-left-radius: 12px;
+    border-top-right-radius: 20px;
+}
+
+.highlight-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    font-weight: 800;
+    font-size: 1.4rem;
+    color: var(--color-primary);
+}
+
+.highlight-cell {
+    background: rgba(0, 82, 255, 0.02);
+    position: relative;
+    z-index: 10;
+    border-left: 2px solid var(--color-primary);
+    border-right: 2px solid var(--color-primary);
+    border-bottom: 1px solid rgba(0, 82, 255, 0.1) !important;
+}
+
+.comparison-table tbody tr:last-child .highlight-cell {
+    border-bottom: 1px solid rgba(0, 82, 255, 0.1) !important;
+}
+
+.highlight-cta {
+    background: rgba(0, 82, 255, 0.02);
+    padding: 2rem !important;
+    border-left: 2px solid var(--color-primary);
+    border-right: 2px solid var(--color-primary);
+    border-bottom: 3px solid var(--color-primary) !important;
+    border-bottom-left-radius: 16px;
+    border-bottom-right-radius: 16px;
+    text-align: center;
+    position: relative;
+    /* Extra trick just in case the parent cuts off the physical border */
+    box-shadow: inset 0 -3px 0 0 var(--color-primary);
+}
+
+/* Ensure the wrapper doesn't crop the table's absolute borders at the bottom */
+.table-wrapper {
+    max-width: 1100px;
+    margin: 0 auto;
+    background: var(--color-white);
+    border-radius: 20px;
+    box-shadow: 0 4px 60px rgba(0, 0, 0, 0.04);
+    border: 1px solid var(--color-gray-200);
+    padding-bottom: 2px;
+}
+
+/* Ensure global utility w-full behaves predictably here */
+.btn-primary.w-full {
+    width: 100%;
+    box-sizing: border-box;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    font-size: 1rem;
+    font-weight: bold;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.bg-blue {
+    background: var(--color-primary);
+    color: white;
+    box-shadow: 0 4px 12px rgba(0, 82, 255, 0.3);
+}
+
+.bg-gray {
+    background: var(--color-gray-100);
+    color: var(--color-gray-600);
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.02);
+}
+
+@media (max-width: 768px) {
+    .comparison-section {
+        padding: 4rem 1rem;
+    }
+    
+    .table-wrapper {
+        overflow-x: auto;
+        border-radius: 12px;
+        -webkit-overflow-scrolling: touch;
+        /* Padding bottom to allow border visibility on iOS/Safari */
+        padding-bottom: 2px;
+    }
+    
+    .comparison-table {
+        width: 800px; /* Force horizontal scroll on mobile */
+    }
+
+    .highlight-cta {
+        padding: 1.5rem 1rem !important;
+    }
+
+    /* Make the CTA button less intrusive on mobile comparison table */
+    .btn-primary.w-full {
+        width: auto;
+        padding: 0.75rem 1.5rem;
+        font-size: 0.95rem;
+    }
+}

@@ -1,0 +1,124 @@
+.hero-exact {
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+    padding: 8rem 0 3rem 0; /* specific padding instead of section-padding */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--color-white);
+}
+
+.hero-container {
+    position: relative;
+    z-index: 10;
+    max-width: 900px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.hero-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    background: white;
+    padding: 0.5rem 1rem;
+    border-radius: 50px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+    margin-bottom: 2rem;
+    border: 1px solid rgba(0, 0, 0, 0.02);
+}
+
+.badge-text {
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: var(--color-text-main);
+}
+
+.hero-title {
+    font-size: 4.5rem;
+    font-weight: 800;
+    line-height: 1.1;
+    margin-bottom: 1.5rem;
+    letter-spacing: -2px;
+    color: var(--color-text-main);
+}
+
+.text-primary {
+    color: var(--color-primary);
+}
+
+.hero-subtitle {
+    font-size: 1.05rem;
+    color: var(--color-text-muted);
+    max-width: 600px;
+    margin: 0 auto 3rem auto;
+    line-height: 1.6;
+}
+
+.hero-btn {
+    padding: 1rem 2.5rem;
+    font-size: 1.1rem;
+}
+
+/* Base Animations inspired by ReactBits requirements */
+.animate-fade-in-up {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+.stagger-1 {
+    animation-delay: 0.1s;
+}
+
+.stagger-2 {
+    animation-delay: 0.2s;
+}
+
+.stagger-3 {
+    animation-delay: 0.3s;
+}
+
+@keyframes fadeInUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@media (max-width: 900px) {
+    .hero-title {
+        font-size: 3.5rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero-exact {
+        padding: 6rem 0 2rem 0;
+    }
+    .hero-title {
+        font-size: 2.8rem;
+    }
+    .hero-subtitle {
+        font-size: 1rem;
+        padding: 0 1rem;
+    }
+    .hero-btn {
+        padding: 0.85rem 2rem;
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-title {
+        font-size: 2.2rem;
+    }
+    .hero-badge {
+        padding: 0.4rem 0.8rem;
+    }
+    .badge-text {
+        font-size: 0.75rem;
+    }
+}
