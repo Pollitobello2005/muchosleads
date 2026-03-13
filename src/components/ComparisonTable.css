@@ -158,28 +158,135 @@
     .comparison-section {
         padding: 4rem 1rem;
     }
-    
+
     .table-wrapper {
-        overflow-x: auto;
+        overflow-x: hidden;
         border-radius: 12px;
-        -webkit-overflow-scrolling: touch;
-        /* Padding bottom to allow border visibility on iOS/Safari */
         padding-bottom: 2px;
     }
-    
+
     .comparison-table {
-        width: 800px; /* Force horizontal scroll on mobile */
+        width: 100%;
+        table-layout: auto;
     }
 
-    .highlight-cta {
-        padding: 1.5rem 1rem !important;
+    /* Hide the desktop table header */
+    .comparison-table thead {
+        display: none;
     }
 
-    /* Make the CTA button less intrusive on mobile comparison table */
+    .comparison-table tbody,
+    .comparison-table tfoot {
+        display: block;
+        width: 100%;
+    }
+
+    .comparison-table tbody tr {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 1rem 1rem 0.75rem;
+        border-bottom: 1px solid var(--color-gray-100);
+    }
+
+    .comparison-table tbody tr:last-child {
+        border-bottom: none;
+    }
+
+    /* Feature name spans full width */
+    .comparison-table tbody tr td.feature-col {
+        width: 100%;
+        text-align: center !important;
+        padding: 0 0 0.75rem 0 !important;
+        font-size: 0.95rem;
+        font-weight: 700;
+        border-bottom: none;
+    }
+
+    /* The three provider cells share the row equally */
+    .comparison-table tbody tr td:not(.feature-col) {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 0.35rem;
+        padding: 0.5rem 0.25rem;
+        border-bottom: none;
+        font-size: 0.8rem;
+        color: var(--color-gray-600);
+    }
+
+    /* Add labels BEFORE each cell so user knows which column it refers to */
+    .comparison-table tbody tr td:nth-child(2)::before {
+        content: "Traditional";
+        font-size: 0.65rem;
+        font-weight: 600;
+        text-transform: uppercase;
+        letter-spacing: 0.03em;
+        color: var(--color-gray-600);
+        margin-bottom: 0.15rem;
+    }
+    .comparison-table tbody tr td:nth-child(3)::before {
+        content: "In-House";
+        font-size: 0.65rem;
+        font-weight: 600;
+        text-transform: uppercase;
+        letter-spacing: 0.03em;
+        color: var(--color-gray-600);
+        margin-bottom: 0.15rem;
+    }
+    .comparison-table tbody tr td:nth-child(4)::before {
+        content: "MuchosLeads";
+        font-size: 0.65rem;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 0.03em;
+        color: var(--color-primary);
+        margin-bottom: 0.15rem;
+    }
+
+    /* Reset the highlight-cell desktop styling on mobile */
+    .comparison-table tbody tr td.highlight-cell {
+        border-left: none;
+        border-right: none;
+        border-bottom: none !important;
+        background: rgba(0, 82, 255, 0.04);
+        border-radius: 8px;
+    }
+
+    /* Icons on mobile */
+    .icon {
+        width: 28px;
+        height: 28px;
+        font-size: 0.85rem;
+    }
+
+    /* Footer CTA */
+    .comparison-table tfoot tr {
+        display: block;
+        padding: 1.25rem 1rem;
+    }
+
+    .comparison-table tfoot tr td {
+        display: none;
+    }
+
+    .comparison-table tfoot tr td.highlight-cta {
+        display: block;
+        border: none;
+        border-left: none;
+        border-right: none;
+        border-bottom: none !important;
+        border-radius: 0;
+        box-shadow: none;
+        padding: 0 !important;
+        text-align: center;
+    }
+
     .btn-primary.w-full {
-        width: auto;
+        width: 100%;
         padding: 0.75rem 1.5rem;
         font-size: 0.95rem;
+        box-sizing: border-box;
     }
 }
 

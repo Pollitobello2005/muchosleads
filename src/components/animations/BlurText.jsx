@@ -29,7 +29,7 @@ const BlurText = ({
   const defaultFrom = direction === 'top' ? -50 : 50;
 
   return (
-    <span ref={ref} className={className} style={{ display: 'inline-flex', flexWrap: 'wrap', margin: 0 }}>
+    <span ref={ref} className={className} style={{ display: 'inline-flex', flexWrap: 'wrap', justifyContent: 'center', margin: 0 }}>
       {elements.map((element, index) => (
         <motion.span
           key={index}

@@ -17,3 +17,11 @@
     height: 100%;
     opacity: 0.8; /* Slight opacity adjustment for the light theme */
 }
+
+@media (max-width: 768px) {
+    .aurora-container {
+        width: 100%;
+        left: 0;
+        transform: scaleX(1.3);
+    }
+}
