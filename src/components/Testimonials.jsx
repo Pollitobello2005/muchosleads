@@ -8,7 +8,7 @@ const Testimonials = () => {
                 <div className="pricing-premium-wrapper">
                     <h2 className="pricing-premium-title">
                         Custom Infrastructure.<br />
-                        <span className="text-secondary">Scalable Returns.</span>
+                        <span className="text-secondary">Pricing made easy.</span>
                     </h2>
                     
                     <p className="pricing-premium-desc">

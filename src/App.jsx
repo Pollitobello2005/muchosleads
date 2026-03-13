@@ -7,7 +7,7 @@ import VideoSection from './components/VideoSection';
 import Services from './components/Services';
 import ComparisonTable from './components/ComparisonTable';
 import Features from './components/Features';
-import Testimonials from './components/Testimonials';
+import GrowthDiagnostic from './components/GrowthDiagnostic';
 import FAQ from './components/FAQ';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
@@ -53,7 +53,7 @@ const LandingPage = () => (
             </ErrorBoundary>
             <ComparisonTable />
             <Features />
-            <Testimonials />
+            <GrowthDiagnostic />
             <FAQ />
             <Contact />
         </main>

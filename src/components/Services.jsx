@@ -7,9 +7,9 @@ const Services = () => {
         <section id="process" className="services-exact section-padding">
             <div className="container">
                 <div className="services-header text-center">
-                    <p className="subtitle-sm text-primary">From Zero to Qualified Pipeline</p>
+                    <p className="subtitle-sm text-primary">From Zero to Leads in the CRM</p>
                     <h2 className="section-title">
-                        The Process: <span className="text-primary">In 4 Weeks</span>
+                        The Process: <span className="text-primary">less than 4 Weeks</span>
                     </h2>
                     <p className="section-desc">
                         Here's exactly what happens after you book a strategy call.
@@ -30,12 +30,12 @@ const Services = () => {
                             </div>
                         </div>
                         <div className="service-content">
-                            <h3>1. ICP Mapping & List Building</h3>
-                            <p>We define your Ideal Customer Profile, then build verified prospect lists using LinkedIn, Apollo, and Clay — filtered by buying intent, company size, and industry.</p>
+                            <h3>1. Target & List Building</h3>
+                            <p>We define your Ideal Customer Profile, then build verified effective lists using LinkedIn, Apollo, and Clay and more, filtered by buying intent, company size, and industry or whatever helps us find your ideal client.</p>
                             <ul className="service-features">
-                                <li><span className="arrow-icon">→</span> Hand-curated B2B leads</li>
-                                <li><span className="arrow-icon">→</span> Filtered by intent</li>
-                                <li><span className="arrow-icon">→</span> You approve before launch</li>
+                                <li><span className="arrow-icon">→</span> Leads with money and intent to buy</li>
+                                <li><span className="arrow-icon">→</span> Start building a real LTV-oriented Database</li>
+                                <li><span className="arrow-icon">→</span> Identifying conversations to build automations</li>
                             </ul>
                         </div>
                     </div>
@@ -54,11 +54,11 @@ const Services = () => {
                         </div>
                         <div className="service-content">
                             <h3>2. Omnichannel Outreach & Tracking</h3>
-                            <p>We launch personalized sequences across email, LinkedIn, and phone. Your CRM becomes a real-time map of opportunities, not a contact graveyard. We track every touchpoint.</p>
+                            <p>Time to reach those leads. Personalized sequences across Email, Social Media, Phone, everything that pushes them forward to buy. Your CRM becomes a real-time map of opportunities, not a contact graveyard. We track every touchpoint.</p>
                             <ul className="service-features">
-                                <li><span className="arrow-icon">→</span> Email, LinkedIn, Phone, SMS</li>
-                                <li><span className="arrow-icon">→</span> Reply categorization</li>
-                                <li><span className="arrow-icon">→</span> Real-time pipeline visibility</li>
+                                <li><span className="arrow-icon">→</span> Not a single lead is left unattended</li>
+                                <li><span className="arrow-icon">→</span> Real sales automations, no soft follow-up</li>
+                                <li><span className="arrow-icon">→</span> Automated and with real-time visibility</li>
                             </ul>
                         </div>
                     </div>
@@ -76,12 +76,12 @@ const Services = () => {
                             </div>
                         </div>
                         <div className="service-content">
-                            <h3>3. Speed to Lead Execution</h3>
-                            <p>When a prospect shows interest, we respond in hours, not days. We use speed as a competitive advantage to qualify interested prospects against your criteria before reaching your calendar.</p>
+                            <h3>3. Engagement to drive sales</h3>
+                            <p>As soon as a lead enters the CRM, we respond as soon as it matters to turn them into a potential client. We use well thought messaging to make every lead book that call, make that inquiry, take that demo, or whatever moves them further in the funnel.</p>
                             <ul className="service-features">
                                 <li><span className="arrow-icon">→</span> Rapid response protocols</li>
-                                <li><span className="arrow-icon">→</span> Strict qualification criteria</li>
-                                <li><span className="arrow-icon">→</span> Pre-qualified appointments</li>
+                                <li><span className="arrow-icon">→</span> Copywriting based on data made by humans</li>
+                                <li><span className="arrow-icon">→</span> Use of best channels</li>
                             </ul>
                         </div>
                     </div>

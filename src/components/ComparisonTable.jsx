@@ -37,7 +37,7 @@ const ComparisonTable = () => {
                                 <td className="highlight-cell"><span className="icon check bg-blue">✓</span></td>
                             </tr>
                             <tr>
-                                <td className="feature-col">Live in 7 Days</td>
+                                <td className="feature-col">Leads in less than 7 days*</td>
                                 <td><span className="icon cross bg-gray">✕</span></td>
                                 <td><span className="icon cross bg-gray">✕</span></td>
                                 <td className="highlight-cell"><span className="icon check bg-blue">✓</span></td>
@@ -49,7 +49,7 @@ const ComparisonTable = () => {
                                 <td className="highlight-cell"><span className="icon check bg-blue">✓</span></td>
                             </tr>
                             <tr>
-                                <td className="feature-col">Performance Guarantee</td>
+                                <td className="feature-col">Integrated Outreach and Follow-up</td>
                                 <td><span className="icon cross bg-gray">✕</span></td>
                                 <td><span className="icon cross bg-gray">✕</span></td>
                                 <td className="highlight-cell"><span className="icon check bg-blue">✓</span></td>
@@ -67,6 +67,7 @@ const ComparisonTable = () => {
                         </tfoot>
                     </table>
                 </div>
+                <p className="table-footnote">*From acquisition system date activation</p>
             </div>
         </section>
     );

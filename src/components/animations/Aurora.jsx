@@ -98,12 +98,14 @@ void main() {
   float height = snoise(vec2(uv.x * 2.0 + uTime * 0.1, uTime * 0.25)) * 0.5 * uAmplitude;
   height = exp(height);
   height = (uv.y * 2.0 - height + 0.2);
-  float intensity = 0.6 * height;
+  float rawIntensity = 0.6 * height;
   
   float midPoint = 0.20;
-  float auroraAlpha = smoothstep(midPoint - uBlend * 0.5, midPoint + uBlend * 0.5, intensity);
+  float auroraAlpha = smoothstep(midPoint - uBlend * 0.5, midPoint + uBlend * 0.5, rawIntensity);
   
-  vec3 auroraColor = intensity * rampColor;
+  // Keep the color bright – clamp intensity so it never goes dark/black
+  float intensity = clamp(rawIntensity, 0.35, 1.0);
+  vec3 auroraColor = mix(rampColor, rampColor * intensity, 0.4);
   
   fragColor = vec4(auroraColor * auroraAlpha, auroraAlpha);
 }

@@ -5,7 +5,10 @@ const LogoGarden = () => {
     return (
         <section className="logo-garden">
             <div className="container">
-                <p className="garden-title"><strong>$120M+</strong> Revenue Generated · <strong>2M+</strong> Meetings Booked · <strong>47+</strong> Clients Served</p>
+                <div className="garden-pills">
+                    <span className="garden-pill">1,000,000+ Qualified Leads Generated</span>
+                    <span className="garden-pill">$500+ USD Sales for over 100 clients</span>
+                </div>
                 <div className="garden-marquee">
                     <div className="garden-track">
                         {/* Logos Repeated for Infinite Scroll Effect */}

@@ -8,7 +8,7 @@ const Hero = () => {
     return (
         <section className="hero-exact">
             <Aurora
-              colorStops={["#3b82f6", "#FFFFFF", "#3b82f6"]}
+              colorStops={["#3B82F6", "#E08A4F", "#F97316"]}
               blend={0.5}
               amplitude={1.0}
               speed={0.5}
@@ -18,14 +18,14 @@ const Hero = () => {
 
                 <h1 className="hero-title">
                     <BlurText
-                        text="Zero Vanity Metrics."
+                        text="Your business needs clients."
                         delay={50}
                         animateBy="words"
                         direction="bottom"
                     />
                     <br />
                     <BlurText
-                        text="Just Predictable"
+                        text="Period."
                         className="text-primary"
                         delay={200}
                         animateBy="words"
@@ -33,7 +33,7 @@ const Hero = () => {
                     />
                     <br />
                     <BlurText
-                        text="B2B Pipeline."
+                        text="We get them."
                         delay={350}
                         animateBy="words"
                         direction="bottom"
@@ -41,12 +41,11 @@ const Hero = () => {
                 </h1>
 
                 <p className="hero-subtitle animate-fade-in-up stagger-2">
-                    We replace temporary campaigns with scalable outbound systems that deliver qualified sales meetings straight to your calendar. <br />
-                    <strong>For SaaS, Professional Services, and High-Ticket Businesses.</strong>
+                    We create acquisition systems combining digital paid media, outbound &amp; inbound, cold outreach, content, etc. that generate leads that, with the help of CRM, Automations &amp; Tech, fills your DMs, Email, Bookings, asking for your Business.
                 </p>
 
                 <div className="hero-cta-container animate-fade-in-up stagger-3">
-                    <a href="https://api.leadconnectorhq.com/widget/bookings/20-strategy-call" className="btn-primary hero-btn">Build Your Pipeline Today →</a>
+                    <a href="https://api.leadconnectorhq.com/widget/bookings/20-strategy-call" className="btn-primary hero-btn">Start getting leads →</a>
                 </div>
             </div>
         </section>
