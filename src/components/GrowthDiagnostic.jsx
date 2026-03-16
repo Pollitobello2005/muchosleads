@@ -171,14 +171,41 @@ const plans = {
     }
 };
 
+const GHL_WEBHOOK_URL = 'https://services.leadconnectorhq.com/hooks/1AMk1RZMFnRz4SUyAglf/webhook-trigger/d9e1363c-9357-4c67-bce3-67d7269d33ed';
+
 const GrowthDiagnostic = () => {
-    const [screen, setScreen] = useState('intro'); // intro | quiz | loading | result
+    const [screen, setScreen] = useState('intro'); // intro | email | quiz | loading | result
     const [currentQuestion, setCurrentQuestion] = useState(0);
     const [answers, setAnswers] = useState([]);
     const [resultPlan, setResultPlan] = useState(null);
-    const [submitted, setSubmitted] = useState(false);
+    const [userName, setUserName] = useState('');
+    const [userEmail, setUserEmail] = useState('');
+
+    const sendToGHL = async (data) => {
+        try {
+            await fetch(GHL_WEBHOOK_URL, {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify(data),
+            });
+        } catch (err) {
+            console.error('GHL webhook error:', err);
+        }
+    };
 
     const startQuiz = () => {
+        setScreen('email');
+    };
+
+    const proceedToQuiz = (e) => {
+        e.preventDefault();
+        // Send lead to GHL immediately
+        sendToGHL({
+            name: userName,
+            email: userEmail,
+            source: 'growth_diagnostic',
+            step: 'email_captured',
+        });
         setScreen('quiz');
         setCurrentQuestion(0);
         setAnswers([]);
@@ -201,12 +228,25 @@ const GrowthDiagnostic = () => {
                 const totalScore = answers.reduce((sum, answerIndex, qIndex) => {
                     return sum + questions[qIndex].options[answerIndex].score;
                 }, 0);
+                
                 let plan;
                 if (totalScore <= 8) plan = 'starter';
                 else if (totalScore <= 12) plan = 'growth';
                 else plan = 'enterprise';
+
                 setResultPlan(plan);
                 setScreen('result');
+                const planDataObj = plans[plan];
+                // Send complete data to GHL
+                sendToGHL({
+                    name: userName,
+                    email: userEmail,
+                    source: 'growth_diagnostic',
+                    step: 'quiz_completed',
+                    recommended_plan: plan,
+                    plan_name: planDataObj?.badge || plan,
+                    total_score: totalScore,
+                });
                 // Scroll to top of section
                 document.getElementById('pricing')?.scrollIntoView({ behavior: 'smooth' });
             }, 2500);
@@ -223,16 +263,8 @@ const GrowthDiagnostic = () => {
         setCurrentQuestion(0);
         setAnswers([]);
         setResultPlan(null);
-        setSubmitted(false);
-    };
-
-    const handleSubmit = (e) => {
-        e.preventDefault();
-        const formData = new FormData(e.target);
-        const name = formData.get('name');
-        const email = formData.get('email');
-        console.log('Plan:', resultPlan, 'Name:', name, 'Email:', email);
-        setSubmitted(true);
+        setUserName('');
+        setUserEmail('');
     };
 
     const planData = resultPlan ? plans[resultPlan] : null;
@@ -254,11 +286,42 @@ const GrowthDiagnostic = () => {
                                 Find Out the Right Strategy, Tools & Investment for Your Business — and Exactly How It Would Work.
                             </h3>
                             <p className="gd-intro-desc">
-                                Most agencies send you a generic proposal. We do the opposite. Answer 5 honest questions about where your business stands today, and we will show you the exact acquisition system we would build for you — the tools we would use, what each one does, how they connect, and what kind of pipeline growth you can realistically expect.
+                                Leave your name and email, answer 5 quick questions about where your business stands today, and we will show you the exact acquisition system we would build for you — and send you the full breakdown straight to your inbox.
                             </p>
                             <button className="gd-start-btn" onClick={startQuiz}>
                                 Build My Acquisition Plan →
                             </button>
+                        </div>
+                    )}
+
+                    {/* EMAIL CAPTURE SCREEN */}
+                    {screen === 'email' && (
+                        <div className="gd-email-screen" key="email">
+                            <div className="gd-email-screen-icon">📩</div>
+                            <h2 className="gd-email-screen-title">Before we start — where should we send your plan?</h2>
+                            <p className="gd-email-screen-desc">
+                                After the diagnostic, we will build your personalized acquisition plan and send the full breakdown to your inbox. No spam. No sales calls unless you ask.
+                            </p>
+                            <form className="gd-email-form" onSubmit={proceedToQuiz}>
+                                <input
+                                    type="text"
+                                    className="gd-email-input"
+                                    placeholder="Your full name"
+                                    value={userName}
+                                    onChange={(e) => setUserName(e.target.value)}
+                                    required
+                                />
+                                <input
+                                    type="email"
+                                    className="gd-email-input"
+                                    placeholder="your@email.com"
+                                    value={userEmail}
+                                    onChange={(e) => setUserEmail(e.target.value)}
+                                    required
+                                />
+                                <button type="submit" className="gd-start-btn">Start My Diagnostic →</button>
+                            </form>
+                            <p className="gd-reassurance">No spam. No sales calls unless you ask for one.</p>
                         </div>
                     )}
 
@@ -374,26 +437,13 @@ const GrowthDiagnostic = () => {
                                 </div>
                             </div>
 
-                            {/* CTA */}
+                            {/* CTA — email already captured */}
                             <div className="gd-cta-section">
-                                {!submitted ? (
-                                    <div className="gd-email-form-container">
-                                        <h2>{planData.ctaHeadline}</h2>
-                                        <p>{planData.ctaSubtext}</p>
-                                        <form className="gd-email-form" onSubmit={handleSubmit}>
-                                            <input type="text" name="name" className="gd-email-input" placeholder="Your full name" required />
-                                            <input type="email" name="email" className="gd-email-input" placeholder="your@email.com" required />
-                                            <button type="submit" className={`gd-submit-btn ${resultPlan}`}>{planData.buttonText}</button>
-                                        </form>
-                                        <p className="gd-reassurance">No spam. No sales calls unless you ask for one.</p>
-                                    </div>
-                                ) : (
-                                    <div className="gd-confirmation">
-                                        <h3>{planData.confirmHeadline}</h3>
-                                        <p>{planData.confirmBody}</p>
-                                        <a href="https://api.leadconnectorhq.com/widget/bookings/20-strategy-call" className="gd-secondary-cta">Book a Strategy Call →</a>
-                                    </div>
-                                )}
+                                <div className="gd-confirmation">
+                                    <h3>✅ Your plan is on its way.</h3>
+                                    <p>We are sending the full {planData.badge.replace(/^\S+\s/, '')} breakdown to <strong>{userEmail}</strong> — including investment details, deliverables, onboarding timeline, and your personalized growth roadmap. Want to talk through it live?</p>
+                                    <a href="https://api.leadconnectorhq.com/widget/bookings/20-strategy-call" className="gd-secondary-cta">Book a Strategy Call →</a>
+                                </div>
                             </div>
 
                             <a href="#" className="gd-restart-link" onClick={restartQuiz}>← Start over — retake the diagnostic</a>

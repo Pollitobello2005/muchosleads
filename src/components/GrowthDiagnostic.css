@@ -39,6 +39,44 @@
     animation: gdFadeIn 0.6s ease;
 }
 
+/* Email Capture Screen */
+.gd-email-screen {
+    text-align: center;
+    padding: 40px 20px 50px;
+    animation: gdFadeIn 0.6s ease;
+    max-width: 520px;
+    margin: 0 auto;
+}
+
+.gd-email-screen-icon {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.gd-email-screen-title {
+    font-size: 1.8rem;
+    font-weight: 800;
+    line-height: 1.2;
+    margin-bottom: 16px;
+    color: var(--color-text-main);
+}
+
+.gd-email-screen-desc {
+    font-size: 1rem;
+    line-height: 1.7;
+    color: var(--color-text-muted);
+    margin-bottom: 32px;
+}
+
+.gd-email-screen .gd-email-form {
+    margin-bottom: 16px;
+}
+
+.gd-email-screen .gd-start-btn {
+    width: 100%;
+    margin-top: 4px;
+}
+
 .gd-pre-title {
     display: inline-block;
     background: rgba(59, 130, 246, 0.08);
