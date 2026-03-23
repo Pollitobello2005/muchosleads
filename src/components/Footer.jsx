@@ -10,7 +10,7 @@ const Footer = () => {
 
                     <div className="footer-col footer-brand">
                         <Link to="/" className="logo-link">
-                            <img src="/logo-dark.png" alt="MuchosLeads - B2B Client Acquisition Systems Logo" className="footer-logo-img" />
+                            <img src="/imagenegro.png" alt="MuchosLeads - B2B Client Acquisition Systems Logo" className="footer-logo-img" />
                         </Link>
                         <p className="footer-desc">
                             15 Years Inside the Evolution of Lead Generation. Predictable client acquisition systems for B2B companies.

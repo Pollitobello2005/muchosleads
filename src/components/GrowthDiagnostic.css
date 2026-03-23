@@ -473,11 +473,29 @@
     box-shadow: 0 4px 20px rgba(59, 130, 246, 0.1);
 }
 
+.gd-tech-pill-header {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 8px;
+}
+
+.gd-tech-pill-img {
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
+    border-radius: 8px;
+    background: white;
+    padding: 4px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    flex-shrink: 0;
+}
+
 .gd-tech-pill-name {
     font-size: 1rem;
     font-weight: 700;
     color: var(--color-primary);
-    margin-bottom: 6px;
+    margin-bottom: 0;
 }
 
 .gd-tech-pill-desc {

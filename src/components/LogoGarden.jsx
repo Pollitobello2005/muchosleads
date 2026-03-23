@@ -7,7 +7,8 @@ const LogoGarden = () => {
             <div className="container">
                 <div className="garden-pills">
                     <span className="garden-pill">1,000,000+ Qualified Leads Generated</span>
-                    <span className="garden-pill">$500+ USD Sales for over 100 clients</span>
+                    <span className="garden-pill">$500m+ USD Sales for 200+ clients</span>
+                    <span className="garden-pill">🏆 Internationally Awarded</span>
                 </div>
                 <div className="garden-marquee">
                     <div className="garden-track">

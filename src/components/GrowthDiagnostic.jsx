@@ -65,12 +65,12 @@ const plans = {
         leads: '15–40',
         leadsSub: 'qualified new conversations per month',
         techStack: [
-            { name: 'Apollo.io', desc: 'Finds verified emails, phone numbers, and decision-maker data for your exact target market.' },
-            { name: 'Clay', desc: 'Enriches your prospect lists with deep context so every outreach feels personal, not spammy.' },
-            { name: 'LinkedIn', desc: 'Your most powerful organic channel for building authority and starting conversations at scale.' },
-            { name: 'Google Maps Scraper', desc: 'Pulls local and niche business data to build hyper-targeted prospect lists automatically.' },
-            { name: 'GoHighLevel / CRM', desc: 'Captures every lead, tracks every conversation, and triggers the right follow-up every time.' },
-            { name: 'Zapier', desc: 'Connects all your tools so everything flows automatically — no manual work, no missed leads.' }
+            { name: 'Apollo.io', desc: 'B2B contact data and targeted outreach platform.', img: '/3.png' },
+            { name: 'Clay', desc: 'Automated data enrichment for highly personalized outreach.', img: '/4.png' },
+            { name: 'LinkedIn', desc: 'Primary channel for organic B2B outreach and authority building.', img: '/14.png' },
+            { name: 'Google Maps Scraper', desc: 'Extracts local business data to build targeted regional prospect lists.', img: '/10.png' },
+            { name: 'GoHighLevel', desc: 'All-in-one CRM for pipeline management and follow-up automation.', img: '/6.png' },
+            { name: 'n8n', desc: 'Advanced workflow automation connecting all your sales tools.', img: '/5.png' }
         ],
         capabilities: [
             { title: 'Prospect List Building', desc: 'We identify and verify your ideal clients using Apollo and Clay, so your outreach starts with the right people — not a guess.' },
@@ -99,15 +99,15 @@ const plans = {
         leads: '60–150',
         leadsSub: 'qualified new conversations per month',
         techStack: [
-            { name: 'Apollo.io', desc: 'Finds and verifies your ideal prospects so your outreach list is always clean, current, and targeted.' },
-            { name: 'Clay', desc: 'Enriches every contact with layers of data — company signals, job changes, tech used — so outreach lands differently.' },
-            { name: 'Instantly', desc: 'Sends cold email sequences at scale while maintaining deliverability — so your messages hit inboxes, not spam.' },
-            { name: 'HubSpot', desc: 'Your command center: CRM, email marketing, deal pipeline, and reporting — all in one place.' },
-            { name: 'LinkedIn Sales Navigator', desc: 'Advanced search and filtering to find decision-makers by title, company size, industry, and buying signals.' },
-            { name: 'Google Ads', desc: 'Captures high-intent demand from people actively searching for what you offer — the highest-converting paid channel.' },
-            { name: 'Meta Ads', desc: 'Builds awareness and drives top-of-funnel demand across Facebook and Instagram with precision audience targeting.' },
-            { name: 'Zapier', desc: 'Automates the handoffs between every tool so your pipeline runs without manual intervention.' },
-            { name: 'Looker Studio', desc: 'Turns all your acquisition data into live dashboards — so you always know what is working and where to push harder.' }
+            { name: 'Apollo.io', desc: 'B2B contact data and targeted outreach platform.', img: '/3.png' },
+            { name: 'Clay', desc: 'Automated data enrichment for highly personalized outreach.', img: '/4.png' },
+            { name: 'Instantly', desc: 'Scalable cold email infrastructure with high deliverability.', img: '/7.png' },
+            { name: 'HubSpot', desc: 'Comprehensive CRM for pipeline management and reporting.', img: '/12.png' },
+            { name: 'LinkedIn Sales Navigator', desc: 'Advanced LinkedIn search for specific decision-makers.', img: '/14.png' },
+            { name: 'Google Ads', desc: 'High-intent search campaigns targeting active buyers.', img: '/2.png' },
+            { name: 'Meta Ads', desc: 'Targeted social campaigns to drive top-of-funnel awareness.', img: '/11.png' },
+            { name: 'n8n', desc: 'Advanced workflow automation connecting all your sales tools.', img: '/5.png' },
+            { name: 'Looker Studio', desc: 'Live data dashboards for tracking acquisition performance.', img: '/13.png' }
         ],
         capabilitiesPrefix: 'Everything in Starter, plus:',
         capabilities: [
@@ -128,7 +128,7 @@ const plans = {
         confirmBody: 'Your Growth Engine Plan is heading to your inbox now. It includes your full strategy, the exact tech stack we would configure, expected pipeline impact, and investment details. Want to talk through it? Grab a time below.'
     },
     enterprise: {
-        badge: '👑 Full-Stack Dominance',
+        badge: '🏢 Enterprise Growth Infrastructure',
         matchLine: 'Based on your answers, this is your recommended acquisition system.',
         headline: 'You are ready for a dedicated growth team — not just a better set of tools.',
         body: 'At this level, the bottleneck is not strategy — it is execution capacity. You know what needs to happen. You may even have the tools. What is missing is a team of specialists who are fully dedicated to your pipeline: waking up every morning thinking about your numbers, your market, your next move.',
@@ -137,18 +137,18 @@ const plans = {
         leads: '200+',
         leadsSub: 'qualified new conversations per month',
         techStack: [
-            { name: 'Apollo.io', desc: 'Finds and verifies your ideal prospects so your outreach list is always clean, current, and targeted.' },
-            { name: 'Clay', desc: 'Enriches every contact with layers of data — company signals, job changes, tech used — so outreach lands differently.' },
-            { name: 'Instantly', desc: 'Sends cold email sequences at scale while maintaining deliverability — so your messages hit inboxes, not spam.' },
-            { name: 'HubSpot', desc: 'Your command center: CRM, email marketing, deal pipeline, and reporting — all in one place.' },
-            { name: 'LinkedIn Sales Navigator', desc: 'Advanced search and filtering to find decision-makers by title, company size, industry, and buying signals.' },
-            { name: 'Google Ads', desc: 'Captures high-intent demand from people actively searching for what you offer — the highest-converting paid channel.' },
-            { name: 'Meta Ads', desc: 'Builds awareness and drives top-of-funnel demand across Facebook and Instagram with precision audience targeting.' },
-            { name: 'OpenAI', desc: 'Powers intelligent lead scoring, hyper-personalized outreach, content generation, and AI-driven pipeline automation.' },
-            { name: 'Make.com', desc: 'Builds complex, multi-step automations that connect every tool in your stack — no code, no limits.' },
-            { name: 'Looker Studio', desc: 'Turns all your acquisition data into live dashboards — so you always know what is working and where to push harder.' },
-            { name: 'Notion', desc: 'Your team shared workspace for strategy docs, SOPs, campaign briefs, and real-time collaboration.' },
-            { name: 'Loom', desc: 'Async video communication for walkthroughs, updates, and client-facing reporting — keeping everyone aligned.' }
+            { name: 'Apollo.io', desc: 'B2B contact data and targeted outreach platform.', img: '/3.png' },
+            { name: 'Clay', desc: 'Automated data enrichment for highly personalized outreach.', img: '/4.png' },
+            { name: 'Instantly', desc: 'Scalable cold email infrastructure with high deliverability.', img: '/7.png' },
+            { name: 'HubSpot', desc: 'Comprehensive CRM for pipeline management and reporting.', img: '/12.png' },
+            { name: 'LinkedIn Sales Navigator', desc: 'Advanced LinkedIn search for specific decision-makers.', img: '/14.png' },
+            { name: 'Google Ads', desc: 'High-intent search campaigns targeting active buyers.', img: '/2.png' },
+            { name: 'Meta Ads', desc: 'Targeted social campaigns to drive top-of-funnel awareness.', img: '/11.png' },
+            { name: 'OpenAI', desc: 'Intelligent lead scoring and personalized outreach generation.', img: '/8.png' },
+            { name: 'n8n', desc: 'Advanced workflow automation connecting all your sales tools.', img: '/5.png' },
+            { name: 'Claude', desc: 'Advanced AI analysis for strategy and content optimization.', img: '/9.png' },
+            { name: 'Python', desc: 'Custom scripts for data processing and pipeline intelligence.', img: '/1.png' },
+            { name: 'Stripe', desc: 'Automated payment processing and subscription billing.', img: '/18.png' }
         ],
         capabilitiesPrefix: 'Everything in Growth, plus:',
         capabilities: [
@@ -167,13 +167,51 @@ const plans = {
         ctaSubtext: 'This is a significant commitment — and it should be. Leave your details and we will send you the full Enterprise plan: the team structure, tools, onboarding process, and investment breakdown.',
         buttonText: 'Send Me My Enterprise Plan →',
         confirmHeadline: '✅ You are in.',
-        confirmBody: 'Your Full-Stack Dominance Plan is on its way. It includes your custom team structure, full tech stack configuration, pipeline impact projections, and investment details.'
+        confirmBody: 'Your Enterprise Growth Infrastructure Plan is on its way. It includes your custom team structure, full tech stack configuration, pipeline impact projections, and investment details.'
     }
 };
 
 const GHL_WEBHOOK_URL = 'https://services.leadconnectorhq.com/hooks/1AMk1RZMFnRz4SUyAglf/webhook-trigger/d9e1363c-9357-4c67-bce3-67d7269d33ed';
 
 const GrowthDiagnostic = () => {
+    const pricingSchema = {
+        "@context": "https://schema.org",
+        "@type": "ItemList",
+        "name": "MuchosLeads Pricing Tiers",
+        "itemListElement": [
+            {
+                "@type": "ListItem",
+                "position": 1,
+                "item": {
+                    "@type": "Service",
+                    "name": "Starter Acquisition System",
+                    "description": plans.starter.body,
+                    "offers": { "@type": "Offer", "price": "2500", "priceCurrency": "USD" }
+                }
+            },
+            {
+                "@type": "ListItem",
+                "position": 2,
+                "item": {
+                    "@type": "Service",
+                    "name": "Growth Engine",
+                    "description": plans.growth.body,
+                    "offers": { "@type": "Offer", "price": "5000", "priceCurrency": "USD" }
+                }
+            },
+            {
+                "@type": "ListItem",
+                "position": 3,
+                "item": {
+                    "@type": "Service",
+                    "name": "Enterprise Growth Infrastructure",
+                    "description": plans.enterprise.body,
+                    "offers": { "@type": "Offer", "price": "8000", "priceCurrency": "USD" }
+                }
+            }
+        ]
+    };
+
     const [screen, setScreen] = useState('intro'); // intro | email | quiz | loading | result
     const [currentQuestion, setCurrentQuestion] = useState(0);
     const [answers, setAnswers] = useState([]);
@@ -270,7 +308,11 @@ const GrowthDiagnostic = () => {
     const planData = resultPlan ? plans[resultPlan] : null;
 
     return (
-        <section id="pricing" className="gd-section">
+        <section id="pricing" className="gd-section" aria-label="Pricing and Growth Diagnostic">
+            <script
+                type="application/ld+json"
+                dangerouslySetInnerHTML={{ __html: JSON.stringify(pricingSchema) }}
+            />
             <div className="container">
                 <div className="gd-wrapper">
 
@@ -345,7 +387,7 @@ const GrowthDiagnostic = () => {
                                             className={`gd-option ${answers[currentQuestion] === index ? 'selected' : ''}`}
                                             onClick={() => selectOption(index)}
                                         >
-                                            <div className="gd-option-title">{option.emoji} {option.text}</div>
+                                            <div className="gd-option-title">{option.text}</div>
                                             <div className="gd-option-subtitle">{option.subtitle}</div>
                                         </div>
                                     ))}
@@ -408,7 +450,9 @@ const GrowthDiagnostic = () => {
                                 <div className="gd-tech-pills">
                                     {planData.techStack.map((tool, i) => (
                                         <div className="gd-tech-pill" key={i}>
-                                            <div className="gd-tech-pill-name">{tool.name}</div>
+                                            <div className="gd-tech-pill-header">
+                                                <div className="gd-tech-pill-name">{tool.name}</div>
+                                            </div>
                                             <div className="gd-tech-pill-desc">{tool.desc}</div>
                                         </div>
                                     ))}

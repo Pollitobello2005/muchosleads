@@ -1,0 +1,28 @@
+# MuchosLeads - B2B Client Acquisition Systems
+
+MuchosLeads is a specialized B2B growth and lead generation consultancy. We build predictable client acquisition systems and scalable outbound infrastructure for SaaS, Agencies, and Professional Services. Over our history, we have generated $500M+ in sales for 200+ clients worldwide.
+
+## Ideal Customer Profile (ICP)
+- B2B companies with high lifetime value (LTV).
+- Ready to scale beyond word-of-mouth and manual referrals.
+- Looking for automated, outbound, and inbound pipelines.
+
+## Services & Tech Stack
+We implement completely customized systems using:
+- **Data & Enrichment:** Apollo.io, Clay
+- **Outreach & CRM:** Instantly, HubSpot, LinkedIn Sales Navigator
+- **Inbound Ads:** Google Ads, Meta Ads
+- **Automation & AI:** n8n, OpenAI, Claude, Python
+
+## Pricing Plans (The New Standard in B2B Client Acquisition)
+1. **Starter Acquisition System:** $2,500
+   Recommended for foundational outbound strategies. Generates 15-40 qualified new conversations per month.
+2. **Growth Engine:** $5,000
+   Includes advanced sequences, ads, and CRM automations. Generates 60-150 qualified new conversations per month.
+3. **Enterprise Growth Infrastructure:** $8,000+
+   A dedicated growth team acting in-house. 200+ pipeline conversations per month. Full AI implementation.
+
+## Contact
+- Web: https://muchosleads.mx
+- Phone: +52 56 1688 9945
+- Email: coralie@muchosleads.mx

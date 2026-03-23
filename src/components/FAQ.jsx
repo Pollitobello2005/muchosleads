@@ -23,14 +23,31 @@ const faqs = [
 const FAQ = () => {
     const [activeIndex, setActiveIndex] = useState(null);
 
+    const faqSchema = {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": faqs.map(faq => ({
+            "@type": "Question",
+            "name": faq.question,
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": faq.answer
+            }
+        }))
+    };
+
     const toggleFAQ = (index) => {
         setActiveIndex(activeIndex === index ? null : index);
     };
 
     return (
-        <section className="faq-section">
+        <section className="faq-section" aria-labelledby="faq-title">
+            <script
+                type="application/ld+json"
+                dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+            />
             <div className="faq-container">
-                <h2 className="section-title center">Is This For You?</h2>
+                <h2 id="faq-title" className="section-title center">Is This For You?</h2>
 
                 <div className="faq-list">
                     {faqs.map((faq, index) => (
@@ -41,6 +58,8 @@ const FAQ = () => {
                             <button
                                 className="faq-question"
                                 onClick={() => toggleFAQ(index)}
+                                aria-expanded={activeIndex === index}
+                                aria-controls={`faq-answer-${index}`}
                             >
                                 {faq.question}
                                 <span 
@@ -51,6 +70,7 @@ const FAQ = () => {
                                 </span>
                             </button>
                             <div
+                                id={`faq-answer-${index}`}
                                 className="faq-answer-container"
                                 style={{ maxHeight: activeIndex === index ? '200px' : '0' }}
                             >

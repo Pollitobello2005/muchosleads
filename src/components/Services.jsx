@@ -3,12 +3,38 @@ import { DotLottieReact } from '@lottiefiles/dotlottie-react';
 import './Services.css';
 
 const Services = () => {
+    const serviceSchema = {
+        "@context": "https://schema.org",
+        "@type": "Service",
+        "name": "B2B Client Acquisition System",
+        "description": "A 4-week process from zero to leads in your CRM. We build target lists, execute omnichannel outreach, drive engagement, and help you close deals.",
+        "provider": {
+            "@type": "Organization",
+            "name": "MuchosLeads"
+        },
+        "serviceType": "Lead Generation",
+        "hasOfferCatalog": {
+            "@type": "OfferCatalog",
+            "name": "Acquisition Process",
+            "itemListElement": [
+                { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Target & List Building" } },
+                { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Omnichannel Outreach & Tracking" } },
+                { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Engagement to Drive Sales" } },
+                { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Close & Scale" } }
+            ]
+        }
+    };
+
     return (
-        <section id="process" className="services-exact section-padding">
+        <section id="process" className="services-exact section-padding" aria-labelledby="services-title">
+            <script
+                type="application/ld+json"
+                dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceSchema) }}
+            />
             <div className="container">
                 <div className="services-header text-center">
                     <p className="subtitle-sm text-primary">From Zero to Leads in the CRM</p>
-                    <h2 className="section-title">
+                    <h2 id="services-title" className="section-title">
                         The Process: <span className="text-primary">less than 4 Weeks</span>
                     </h2>
                     <p className="section-desc">

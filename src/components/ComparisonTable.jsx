@@ -18,7 +18,7 @@ const ComparisonTable = () => {
                                 <th>In-House Team</th>
                                 <th className="highlight-col">
                                     <div className="highlight-header">
-                                        <img src="/logo-dark.png" alt="MuchosLeads B2B Lead Generation Methodology" style={{ height: '24px', marginRight: '4px' }} />
+                                        <img src="/imagenegro.png" alt="MuchosLeads B2B Lead Generation Methodology" style={{ height: '24px', marginRight: '4px' }} />
                                     </div>
                                 </th>
                             </tr>

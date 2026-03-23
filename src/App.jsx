@@ -29,7 +29,7 @@ const LandingPage = () => (
                 "@type": "Organization",
                 "name": "MuchosLeads",
                 "url": "https://muchosleads.mx",
-                "logo": "https://muchosleads.mx/logo-dark.png",
+                "logo": "https://muchosleads.mx/imagenegro.png",
                 "description": "Predictable client acquisition systems for B2B companies.",
                 "contactPoint": {
                     "@type": "ContactPoint",

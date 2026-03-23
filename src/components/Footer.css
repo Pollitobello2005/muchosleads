@@ -21,10 +21,11 @@
 }
 
 .footer-logo-img {
-    height: 48px;
+    height: 32px;
     width: auto;
     object-fit: contain;
     filter: brightness(0) invert(1);
+    margin-left: -15px;
 }
 
 .footer-desc {

@@ -24,9 +24,10 @@
 }
 
 .nav-logo-img {
-    height: 40px; /* Adjust based on exact dimensions */
+    height: 28px; /* Adjust based on exact dimensions */
     width: auto;
     object-fit: contain;
+    margin-left: -20px;
 }
 
 .nav-links-exact {
@@ -65,6 +66,7 @@
         font-size: 0.8rem;
     }
     .nav-logo-img {
-        height: 32px;
+        height: 24px;
+        margin-left: -10px;
     }
 }

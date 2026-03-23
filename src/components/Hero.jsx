@@ -8,7 +8,7 @@ const Hero = () => {
     return (
         <section className="hero-exact">
             <Aurora
-              colorStops={["#3B82F6", "#E08A4F", "#F97316"]}
+              colorStops={["#CCFF00", "#4A0E4E", "#8B1E7E"]}
               blend={0.5}
               amplitude={1.0}
               speed={0.5}

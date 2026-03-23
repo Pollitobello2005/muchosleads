@@ -6,7 +6,7 @@ const Navbar = () => {
         <header className="navbar-exact">
             <div className="container nav-container">
                 <a href="/" className="logo-link">
-                    <img src="/logo-dark.png" alt="MuchosLeads - B2B Lead Generation & Predictable Pipeline Logo" className="nav-logo-img" />
+                    <img src="/imagenegro.png" alt="MuchosLeads - B2B Lead Generation & Predictable Pipeline Logo" className="nav-logo-img" />
                 </a>
 
                 <nav className="nav-links-exact desktop-only">
