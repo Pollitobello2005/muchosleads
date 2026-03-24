@@ -51,13 +51,22 @@
 }
 
 .garden-logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     font-size: 2.2rem;
     font-weight: 800;
     color: #333;
     opacity: 0.8;
     filter: grayscale(100%);
-    transition: filter 0.3s ease, opacity 0.3s ease;
+    transition: filter 0.3s ease, opacity 0.3s ease, transform 0.3s ease;
     white-space: nowrap;
+}
+
+.garden-logo-img {
+    height: 40px;
+    width: auto;
+    object-fit: contain;
 }
 
 .garden-logo.text-red {
@@ -83,4 +92,41 @@
     }
 
     /* Moving by 1/3rd because we duplicated 3 times */
+}
+
+.garden-track-reverse {
+    display: flex;
+    width: max-content;
+    align-items: center;
+    gap: 4rem;
+    animation: scroll-x-reverse 35s linear infinite;
+}
+
+@keyframes scroll-x-reverse {
+    0% {
+        transform: translateX(-33.33%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+.tech-garden-title {
+    text-align: center;
+    font-size: 0.9rem;
+    font-weight: 700;
+    color: var(--color-primary);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin: 3rem 0 1.5rem;
+    opacity: 0.7;
+}
+
+@media (max-width: 768px) {
+    .garden-logo {
+        font-size: 1.5rem;
+    }
+    .garden-logo-img {
+        height: 30px;
+    }
 }

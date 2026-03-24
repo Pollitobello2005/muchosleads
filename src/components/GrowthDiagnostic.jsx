@@ -451,6 +451,7 @@ const GrowthDiagnostic = () => {
                                     {planData.techStack.map((tool, i) => (
                                         <div className="gd-tech-pill" key={i}>
                                             <div className="gd-tech-pill-header">
+                                                {tool.img && <img src={tool.img} alt={tool.name} className="gd-tech-pill-img" />}
                                                 <div className="gd-tech-pill-name">{tool.name}</div>
                                             </div>
                                             <div className="gd-tech-pill-desc">{tool.desc}</div>
