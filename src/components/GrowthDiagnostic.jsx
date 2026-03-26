@@ -3,60 +3,60 @@ import './GrowthDiagnostic.css';
 
 const questions = [
     {
-        label: "Question 1 of 5 — Your Current Acquisition Channel",
-        question: "How does your business get most of its clients right now?",
-        subtext: "Be honest — there is no wrong answer here. This helps us understand your starting point.",
+        label: "Phase 1 of 5 — Infrastructure Audit",
+        question: "How are you currently acquiring high-value clients?",
+        subtext: "Our diagnostic engine analyzes your current acquisition framework to architect your ideal growth system.",
         options: [
-            { text: "Referrals & word of mouth", subtitle: "Clients come from people who know us. It works, but it is unpredictable.", score: 1, emoji: "🤝" },
-            { text: "Referrals, plus some occasional outreach", subtitle: "We have tried a few things, but there is no real system in place yet.", score: 2, emoji: "📣" },
-            { text: "We run active marketing campaigns", subtitle: "We have some infrastructure. We are looking to optimize or scale it.", score: 3, emoji: "🚀" }
+            { text: "Network & Organic Word-of-Mouth", subtitle: "Clients arrive through our established network. High quality, but unpredictable flow.", score: 1 },
+            { text: "Hybrid Network & Tactical Outreach", subtitle: "We occasionally engage in manual prospecting, but lack a systematic, scaled approach.", score: 2 },
+            { text: "Active Multi-Channel Campaigns", subtitle: "We have deployed marketing infrastructure and require advanced optimization and scale.", score: 3 }
         ]
     },
     {
-        label: "Question 2 of 5 — Your Growth Velocity",
-        question: "How many new clients does your business typically close in a year?",
-        subtext: "This gives us a sense of your current pipeline volume and how much room there is to grow.",
+        label: "Phase 2 of 5 — Pipeline Velocity",
+        question: "What is your current closed-won deal volume per year?",
+        subtext: "This metric calibrates the data parameters required to scale your specific sales engine.",
         options: [
-            { text: "1 to 5 new clients", subtitle: "Each client matters a lot. Consistent flow would change everything.", score: 1, emoji: "📦" },
-            { text: "6 to 20 new clients", subtitle: "We have traction. We need a repeatable system to keep it going.", score: 2, emoji: "📈" },
-            { text: "More than 20 new clients", subtitle: "We close at volume. We need efficiency, automation, and scale.", score: 3, emoji: "🏢" }
+            { text: "1 to 5 new clients", subtitle: "Each deal is highly significant. We need a consistent, calculated flow.", score: 1 },
+            { text: "6 to 20 new clients", subtitle: "Early traction demonstrated. We require a repeatable, automated system to multiply this.", score: 2 },
+            { text: "More than 20 new clients", subtitle: "High-volume closing. We need maximum efficiency, AI automation, and omni-channel scale.", score: 3 }
         ]
     },
     {
-        label: "Question 3 of 5 — Your Marketing Capacity",
-        question: "Who handles marketing at your company today?",
-        subtext: "Knowing your internal bandwidth helps us understand what we would need to own vs. support.",
+        label: "Phase 3 of 5 — Operational Bandwidth",
+        question: "Who commands the marketing and acquisition operations internally?",
+        subtext: "Understanding your internal capacity allows us to determine the exact level of operational deployment we must execute.",
         options: [
-            { text: "It is mostly me — the owner or founder", subtitle: "I wear a lot of hats. Marketing usually gets whatever time is left.", score: 1, emoji: "🙋" },
-            { text: "We have one marketing person", subtitle: "There is someone focused on it, but they cannot do everything alone.", score: 2, emoji: "👤" },
-            { text: "We have a marketing team or a CMO", subtitle: "We have real marketing capacity. We want an execution partner, not a consultant.", score: 3, emoji: "🏛️" }
+            { text: "Founder / Executive Led", subtitle: "I manage acquisition. Time is scarce and we need a fully managed ecosystem.", score: 1 },
+            { text: "Solo Marketing Operator", subtitle: "We have an internal specialist, but they require a robust infrastructure engine to support them.", score: 2 },
+            { text: "Dedicated Team / CMO", subtitle: "We have deep capacity. We are seeking a high-level execution partner, not just consultation.", score: 3 }
         ]
     },
     {
-        label: "Question 4 of 5 — Your Revenue Scale",
-        question: "What is your approximate monthly revenue?",
-        subtext: "This helps us calibrate the right level of infrastructure — and what kind of ROI is realistic for you.",
+        label: "Phase 4 of 5 — Revenue Parameters",
+        question: "What is your current monthly revenue threshold?",
+        subtext: "We use this data point to engineer the exact ROI models and campaign aggression tailored for your stage.",
         options: [
-            { text: "Under $30,000 per month", subtitle: "We are building. Every dollar has to work hard.", score: 1, emoji: "💼" },
-            { text: "Between $30,000 and $100,000 per month", subtitle: "We are established. Marketing investment makes sense now.", score: 2, emoji: "💰" },
-            { text: "Over $100,000 per month", subtitle: "We generate serious revenue. We need serious infrastructure to match.", score: 3, emoji: "🏆" }
+            { text: "Scaling Phase (Under $30k/mo)", subtitle: "We are aggressively building. Every dollar deployed must be efficiently engineered.", score: 1 },
+            { text: "Growth Phase ($30k - $100k/mo)", subtitle: "We are established. We're ready to deploy capital into advanced acquisition assets.", score: 2 },
+            { text: "Enterprise Phase (Over $100k/mo)", subtitle: "Significant revenue base. We require elite, omni-channel infrastructure to match our scale.", score: 3 }
         ]
     },
     {
-        label: "Question 5 of 5 — Your Growth Ambition",
-        question: "What does success look like for you in the next 12 months?",
-        subtext: "This is about clarity, not pressure. Knowing your goal shapes the entire strategy.",
+        label: "Phase 5 of 5 — Strategic Trajectory",
+        question: "What is your primary growth objective for the next 12 months?",
+        subtext: "This critical input dictates the architecture of your entire customized acquisition plan.",
         options: [
-            { text: "Consistent, predictable lead flow", subtitle: "I want to stop relying on luck and referrals. Give me a system I can count on.", score: 1, emoji: "🎯" },
-            { text: "Scale fast and fill my pipeline", subtitle: "I am ready to invest and move quickly. I want volume and velocity.", score: 2, emoji: "⚡" },
-            { text: "Dominate my market", subtitle: "I want to be everywhere my ideal client looks. All channels. All the time.", score: 3, emoji: "👑" }
+            { text: "Establish Predictable Systems", subtitle: "Eliminate reliance on network luck. Deploy a calculated, predictable lead engine.", score: 1 },
+            { text: "Aggressive Pipeline Expansion", subtitle: "Capital is ready to deploy. We seek rapid velocity and a fully loaded sales pipeline.", score: 2 },
+            { text: "Total Market Dominance", subtitle: "We aim for absolute omnipresence. We need to be exactly where our ideal clients look, 24/7.", score: 3 }
         ]
     }
 ];
 
 const plans = {
     starter: {
-        badge: '🌱 Starter Acquisition System',
+        badge: 'Starter Acquisition System',
         matchLine: 'Based on your answers, this is your recommended starting point.',
         headline: 'You have built something real. Now let us build the system that brings clients to you.',
         body: 'Right now, your business survives on relationships — and that is actually a strength. It means you deliver results and people trust you. But referrals have a ceiling, and you know it. The next step is not more hustle — it is infrastructure. We build you a lean, efficient client acquisition system that takes what is already working and turns it into something you can control, measure, and scale.',
@@ -85,11 +85,11 @@ const plans = {
         ctaHeadline: 'Your plan is ready. Let us get it to you.',
         ctaSubtext: 'Enter your details below and we will send you the full Starter plan — investment breakdown, deliverables, onboarding timeline, and your personalized growth roadmap. No pitch. No pressure. Just the plan.',
         buttonText: 'Send Me My Starter Plan →',
-        confirmHeadline: '✅ You are in.',
+        confirmHeadline: 'You are in.',
         confirmBody: 'Your Starter Acquisition Plan is on its way to your inbox. It includes your full strategy breakdown, the tools we would use, expected timelines, and investment details. If you would rather talk through it live, grab a time below.'
     },
     growth: {
-        badge: '🚀 Growth Engine',
+        badge: 'Growth Engine',
         popular: true,
         matchLine: 'Based on your answers, this is your recommended acquisition system.',
         headline: 'You are ready to stop piecing things together — and build something that actually scales.',
@@ -124,11 +124,11 @@ const plans = {
         ctaHeadline: 'Your Growth Engine plan is ready.',
         ctaSubtext: 'Leave your details and we will send you the complete breakdown — every deliverable, every tool with context, investment range, and how we would ramp up your pipeline from day one.',
         buttonText: 'Send Me My Growth Plan →',
-        confirmHeadline: '✅ You are in.',
+        confirmHeadline: 'You are in.',
         confirmBody: 'Your Growth Engine Plan is heading to your inbox now. It includes your full strategy, the exact tech stack we would configure, expected pipeline impact, and investment details. Want to talk through it? Grab a time below.'
     },
     enterprise: {
-        badge: '🏢 Enterprise Growth Infrastructure',
+        badge: 'Enterprise Growth Infrastructure',
         matchLine: 'Based on your answers, this is your recommended acquisition system.',
         headline: 'You are ready for a dedicated growth team — not just a better set of tools.',
         body: 'At this level, the bottleneck is not strategy — it is execution capacity. You know what needs to happen. You may even have the tools. What is missing is a team of specialists who are fully dedicated to your pipeline: waking up every morning thinking about your numbers, your market, your next move.',
@@ -166,7 +166,7 @@ const plans = {
         ctaHeadline: 'Your dedicated team plan is ready.',
         ctaSubtext: 'This is a significant commitment — and it should be. Leave your details and we will send you the full Enterprise plan: the team structure, tools, onboarding process, and investment breakdown.',
         buttonText: 'Send Me My Enterprise Plan →',
-        confirmHeadline: '✅ You are in.',
+        confirmHeadline: 'You are in.',
         confirmBody: 'Your Enterprise Growth Infrastructure Plan is on its way. It includes your custom team structure, full tech stack configuration, pipeline impact projections, and investment details.'
     }
 };
@@ -306,6 +306,8 @@ const GrowthDiagnostic = () => {
     };
 
     const planData = resultPlan ? plans[resultPlan] : null;
+    const [selectedTechTool, setSelectedTechTool] = useState(null);
+    const [selectedCapability, setSelectedCapability] = useState(null);
 
     return (
         <section id="pricing" className="gd-section" aria-label="Pricing and Growth Diagnostic">
@@ -320,18 +322,18 @@ const GrowthDiagnostic = () => {
                     {screen === 'intro' && (
                         <div className="gd-intro" key="intro">
                             <h2 className="pricing-premium-title">
-                                Custom Infrastructure.<br />
-                                <span className="text-secondary">Pricing made easy.</span>
+                                Proprietary Infrastructure.<br />
+                                <span className="text-secondary">Engineered for Scale.</span>
                             </h2>
-                            <div className="gd-pre-title">60-Second Growth Diagnostic</div>
+                            <div className="gd-pre-title">Strategic Growth Data Assessment</div>
                             <h3 className="gd-intro-headline">
-                                Find Out the Right Strategy, Tools & Investment for Your Business — and Exactly How It Would Work.
+                                Unlock the Exact Acquisition Systems, Advanced Auto-Tooling & Framework Required to Scale.
                             </h3>
                             <p className="gd-intro-desc">
-                                Leave your email, answer 5 quick questions about where your business stands today, and we will show you the exact acquisition system we would build for you — and send you the full breakdown straight to your inbox.
+                                Provide your email, map your current data inside our 5-phase assessment, and our system will instantly architect the precise client acquisition blueprint tailored for your exact revenue threshold.
                             </p>
                             <button className="gd-start-btn" onClick={startQuiz}>
-                                Build My Acquisition Plan →
+                                Initialize Assessment Engine →
                             </button>
                         </div>
                     )}
@@ -339,7 +341,6 @@ const GrowthDiagnostic = () => {
                     {/* EMAIL CAPTURE SCREEN */}
                     {screen === 'email' && (
                         <div className="gd-email-screen" key="email">
-                            <div className="gd-email-screen-icon">📩</div>
                             <h2 className="gd-email-screen-title">Before we start — where should we send your plan?</h2>
                             <p className="gd-email-screen-desc">
                                 After the diagnostic, we will build your personalized acquisition plan and send the full breakdown to your inbox. No spam. No sales calls unless you ask.
@@ -368,8 +369,8 @@ const GrowthDiagnostic = () => {
                                     style={{ width: `${((currentQuestion + 1) / questions.length) * 100}%` }}
                                 />
                             </div>
-                            <div className="gd-question-label">{questions[currentQuestion].label}</div>
-                            <div className="gd-question-card">
+                            <div className="gd-question-label" key={`label-${currentQuestion}`}>{questions[currentQuestion].label}</div>
+                            <div className="gd-question-card" key={`card-${currentQuestion}`}>
                                 <h2>{questions[currentQuestion].question}</h2>
                                 <p className="gd-question-subtext">{questions[currentQuestion].subtext}</p>
                                 <div className="gd-options">
@@ -379,22 +380,25 @@ const GrowthDiagnostic = () => {
                                             className={`gd-option ${answers[currentQuestion] === index ? 'selected' : ''}`}
                                             onClick={() => selectOption(index)}
                                         >
-                                            <div className="gd-option-title">{option.text}</div>
-                                            <div className="gd-option-subtitle">{option.subtitle}</div>
+                                            <span className="letter-icon">{['A', 'B', 'C'][index]}</span>
+                                            <div className="gd-option-content">
+                                                <div className="gd-option-title">{option.text}</div>
+                                                <div className="gd-option-subtitle">{option.subtitle}</div>
+                                            </div>
                                         </div>
                                     ))}
                                 </div>
                             </div>
                             <div className="gd-nav-buttons">
                                 {currentQuestion > 0 ? (
-                                    <button className="gd-nav-btn gd-back-btn" onClick={previousQuestion}>← Back</button>
+                                    <button className="gd-nav-btn gd-back-btn" onClick={previousQuestion}>← Rewind</button>
                                 ) : <span />}
                                 <button
                                     className="gd-nav-btn gd-next-btn"
                                     onClick={nextQuestion}
                                     disabled={answers[currentQuestion] === undefined}
                                 >
-                                    {currentQuestion === questions.length - 1 ? 'See My Plan →' : 'Next Question →'}
+                                    {currentQuestion === questions.length - 1 ? 'Compile Blueprint →' : 'Next Phase →'}
                                 </button>
                             </div>
                         </div>
@@ -404,8 +408,8 @@ const GrowthDiagnostic = () => {
                     {screen === 'loading' && (
                         <div className="gd-loading" key="loading">
                             <div className="gd-spinner" />
-                            <h2>Building your acquisition blueprint<span className="gd-loading-dots" /></h2>
-                            <p>We are matching your profile to the right strategy, tools, and investment range.</p>
+                            <h2>Processing data & architecting your acquisition engine<span className="gd-loading-dots" /></h2>
+                            <p>Our system is engineering the precise infrastructure, tools, and strategic deployment required for your scale.</p>
                         </div>
                     )}
 
@@ -441,15 +445,24 @@ const GrowthDiagnostic = () => {
                                 <p className="gd-section-subtitle">Every tool we use has a specific job. Here is what we would deploy for you and why.</p>
                                 <div className="gd-tech-pills">
                                     {planData.techStack.map((tool, i) => (
-                                        <div className="gd-tech-pill" key={i}>
-                                            <div className="gd-tech-pill-header">
-                                                {tool.img && <img src={tool.img} alt={tool.name} className="gd-tech-pill-img" />}
-                                                <div className="gd-tech-pill-name">{tool.name}</div>
-                                            </div>
-                                            <div className="gd-tech-pill-desc">{tool.desc}</div>
+                                        <div className="gd-tech-icon-wrapper" key={i} onClick={() => setSelectedTechTool(tool)}>
+                                            {tool.img && <img src={tool.img} alt={tool.name} className="gd-tech-icon-img" title={tool.name} />}
                                         </div>
                                     ))}
                                 </div>
+                                
+                                {selectedTechTool && (
+                                    <div className="gd-tech-modal" onClick={() => setSelectedTechTool(null)}>
+                                        <div className="gd-tech-modal-content" onClick={e => e.stopPropagation()}>
+                                            <button className="gd-tech-modal-close" onClick={() => setSelectedTechTool(null)}>×</button>
+                                            <div className="gd-tech-modal-header">
+                                                {selectedTechTool.img && <img src={selectedTechTool.img} alt={selectedTechTool.name} className="gd-tech-modal-img" />}
+                                                <h4>{selectedTechTool.name}</h4>
+                                            </div>
+                                            <p>{selectedTechTool.desc}</p>
+                                        </div>
+                                    </div>
+                                )}
 
                                 <div className="gd-divider">
                                     <div className="gd-divider-line" />
@@ -464,12 +477,24 @@ const GrowthDiagnostic = () => {
                                         <div className="gd-capabilities-prefix">{planData.capabilitiesPrefix}</div>
                                     )}
                                     <div className="gd-capabilities-grid">
-                                        {planData.capabilities.map((cap, i) => (
-                                            <div className={`gd-capability-item ${resultPlan}`} key={i}>
-                                                <div className="gd-capability-title">✅ {cap.title}</div>
-                                                <div className="gd-capability-desc">{cap.desc}</div>
-                                            </div>
-                                        ))}
+                                        {planData.capabilities.map((cap, i) => {
+                                            const isSelected = selectedCapability === cap;
+                                            return (
+                                                <div 
+                                                    className={`gd-capability-item ${resultPlan} ${isSelected ? 'expanded' : ''}`} 
+                                                    key={i}
+                                                    onClick={() => setSelectedCapability(isSelected ? null : cap)}
+                                                >
+                                                    <div className="gd-capability-header">
+                                                        <div className="gd-capability-title">{cap.title}</div>
+                                                        <span className="gd-capability-toggle">{isSelected ? '−' : '+'}</span>
+                                                    </div>
+                                                    <div className={`gd-capability-desc ${isSelected ? 'open' : ''}`}>
+                                                        {cap.desc}
+                                                    </div>
+                                                </div>
+                                            );
+                                        })}
                                     </div>
                                 </div>
                             </div>
@@ -477,7 +502,7 @@ const GrowthDiagnostic = () => {
                             {/* CTA — email already captured */}
                             <div className="gd-cta-section">
                                 <div className="gd-confirmation">
-                                    <h3>✅ Your plan is on its way.</h3>
+                                    <h3>Your plan is on its way.</h3>
                                     <p>We are sending the full {planData.badge.replace(/^\S+\s/, '')} breakdown to <strong>{userEmail}</strong> — including investment details, deliverables, onboarding timeline, and your personalized growth roadmap. Want to talk through it live?</p>
                                     <a href="https://api.leadconnectorhq.com/widget/bookings/20-strategy-call" className="gd-secondary-cta">Book a Strategy Call →</a>
                                 </div>
