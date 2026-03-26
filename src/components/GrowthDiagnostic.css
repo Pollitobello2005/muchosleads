@@ -3,7 +3,7 @@
    ========================================== */
 
 .gd-section {
-    background-color: var(--color-bg-light);
+    background: linear-gradient(135deg, #FF7F50 0%, #FA8072 100%);
     padding: 6rem 5%;
 }
 
@@ -16,14 +16,14 @@
 .gd-section .pricing-premium-title {
     font-size: 2.5rem;
     font-weight: 800;
-    color: var(--color-gray-900, #111827);
+    color: #ffffff;
     margin-bottom: 2rem;
     line-height: 1.1;
     text-align: center;
 }
 
 .gd-section .pricing-premium-title .text-secondary {
-    color: var(--color-primary);
+    color: #FFB6C1; /* Lighter pink for contrast against salmon */
 }
 
 @media (min-width: 768px) {
@@ -58,13 +58,13 @@
     font-weight: 800;
     line-height: 1.2;
     margin-bottom: 16px;
-    color: var(--color-text-main);
+    color: #ffffff;
 }
 
 .gd-email-screen-desc {
     font-size: 1rem;
     line-height: 1.7;
-    color: var(--color-text-muted);
+    color: rgba(255, 255, 255, 0.9);
     margin-bottom: 32px;
 }
 
@@ -79,8 +79,8 @@
 
 .gd-pre-title {
     display: inline-block;
-    background: rgba(59, 130, 246, 0.08);
-    color: var(--color-primary);
+    background: rgba(255, 255, 255, 0.2);
+    color: #ffffff;
     padding: 8px 20px;
     border-radius: 20px;
     font-size: 13px;
@@ -88,7 +88,7 @@
     letter-spacing: 0.5px;
     text-transform: uppercase;
     margin-bottom: 24px;
-    border: 1px solid rgba(59, 130, 246, 0.15);
+    border: 1px solid rgba(255, 255, 255, 0.3);
 }
 
 .gd-intro-headline {
@@ -96,13 +96,13 @@
     font-weight: 800;
     line-height: 1.2;
     margin-bottom: 24px;
-    color: var(--color-text-main);
+    color: #ffffff;
 }
 
 .gd-intro-desc {
     font-size: 1.05rem;
     line-height: 1.8;
-    color: var(--color-text-muted);
+    color: rgba(255, 255, 255, 0.9);
     margin-bottom: 40px;
     max-width: 800px;
     margin-left: auto;
@@ -294,12 +294,12 @@
 .gd-loading h2 {
     font-size: 1.6rem;
     margin-bottom: 12px;
-    color: var(--color-text-main);
+    color: #ffffff;
 }
 
 .gd-loading p {
     font-size: 1rem;
-    color: var(--color-text-muted);
+    color: rgba(255, 255, 255, 0.9);
 }
 
 .gd-loading-dots::after {
@@ -363,7 +363,7 @@
 
 .gd-match-line {
     font-size: 0.95rem;
-    color: var(--color-text-muted);
+    color: rgba(255, 255, 255, 0.9);
     margin-bottom: 20px;
 }
 
@@ -372,13 +372,13 @@
     font-weight: 800;
     line-height: 1.3;
     margin-bottom: 20px;
-    color: var(--color-text-main);
+    color: #ffffff;
 }
 
 .gd-result-header > p {
     font-size: 1.05rem;
     line-height: 1.8;
-    color: var(--color-text-muted);
+    color: rgba(255, 255, 255, 0.9);
     max-width: 800px;
     margin: 0 auto 30px;
 }

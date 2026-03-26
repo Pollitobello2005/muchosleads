@@ -328,7 +328,7 @@ const GrowthDiagnostic = () => {
                                 Find Out the Right Strategy, Tools & Investment for Your Business — and Exactly How It Would Work.
                             </h3>
                             <p className="gd-intro-desc">
-                                Leave your name and email, answer 5 quick questions about where your business stands today, and we will show you the exact acquisition system we would build for you — and send you the full breakdown straight to your inbox.
+                                Leave your email, answer 5 quick questions about where your business stands today, and we will show you the exact acquisition system we would build for you — and send you the full breakdown straight to your inbox.
                             </p>
                             <button className="gd-start-btn" onClick={startQuiz}>
                                 Build My Acquisition Plan →
@@ -345,14 +345,6 @@ const GrowthDiagnostic = () => {
                                 After the diagnostic, we will build your personalized acquisition plan and send the full breakdown to your inbox. No spam. No sales calls unless you ask.
                             </p>
                             <form className="gd-email-form" onSubmit={proceedToQuiz}>
-                                <input
-                                    type="text"
-                                    className="gd-email-input"
-                                    placeholder="Your full name"
-                                    value={userName}
-                                    onChange={(e) => setUserName(e.target.value)}
-                                    required
-                                />
                                 <input
                                     type="email"
                                     className="gd-email-input"

@@ -45,7 +45,7 @@ const Hero = () => {
                 </p>
 
                 <div className="hero-cta-container animate-fade-in-up stagger-3">
-                    <a href="https://api.leadconnectorhq.com/widget/bookings/20-strategy-call" className="btn-primary hero-btn">Start getting leads →</a>
+                    <a href="#pricing" className="btn-primary hero-btn">Get your plan today →</a>
                 </div>
             </div>
         </section>
