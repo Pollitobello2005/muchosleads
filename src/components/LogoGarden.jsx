@@ -10,32 +10,6 @@ const LogoGarden = () => {
                     <span className="garden-pill">$500m+ USD Sales for 200+ clients</span>
                     <span className="garden-pill">🏆 Internationally Awarded</span>
                 </div>
-                <div className="garden-marquee">
-                    <div className="garden-track">
-                        {/* Logos Repeated for Infinite Scroll Effect */}
-                        <div className="garden-logo">Admira</div>
-                        <div className="garden-logo text-red">Claro-</div>
-                        <div className="garden-logo">LEASEMD</div>
-                        <div className="garden-logo text-red">AMOS</div>
-                        <div className="garden-logo">humanquality</div>
-                        <div className="garden-logo text-teal">Apurata</div>
-
-                        <div className="garden-logo">Admira</div>
-                        <div className="garden-logo text-red">Claro-</div>
-                        <div className="garden-logo">LEASEMD</div>
-                        <div className="garden-logo text-red">AMOS</div>
-                        <div className="garden-logo">humanquality</div>
-                        <div className="garden-logo text-teal">Apurata</div>
-
-                        <div className="garden-logo">Admira</div>
-                        <div className="garden-logo text-red">Claro-</div>
-                        <div className="garden-logo">LEASEMD</div>
-                        <div className="garden-logo text-red">AMOS</div>
-                        <div className="garden-logo">humanquality</div>
-                        <div className="garden-logo text-teal">Apurata</div>
-                    </div>
-                </div>
-
                 <div className="tech-garden-title">Our Elite Tech Stack</div>
                 <div className="garden-marquee">
                     <div className="garden-track-reverse">
