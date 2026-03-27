@@ -4,7 +4,7 @@ import './FloatingWhatsApp.css';
 const FloatingWhatsApp = () => {
     return (
         <a 
-            href="https://api.whatsapp.com/send/?phone=525616889945&text=Hola+Coco%21+%EF%BF%BD&type=phone_number&app_absent=0" 
+            href="https://api.whatsapp.com/send/?phone=527225602984&text=Hola+Coco%21+%EF%BF%BD&type=phone_number&app_absent=0" 
             className="floating-wa-btn"
             target="_blank"
             rel="noopener noreferrer"

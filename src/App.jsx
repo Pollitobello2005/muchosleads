@@ -33,7 +33,7 @@ const LandingPage = () => (
                 "description": "Predictable client acquisition systems for B2B companies.",
                 "contactPoint": {
                     "@type": "ContactPoint",
-                    "telephone": "+525616889945",
+                    "telephone": "+527225602984",
                     "contactType": "sales",
                     "email": "coralie@muchosleads.mx"
                 }

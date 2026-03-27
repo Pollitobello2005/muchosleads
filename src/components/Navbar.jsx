@@ -10,7 +10,6 @@ const Navbar = () => {
                 </a>
 
                 <nav className="nav-links-exact desktop-only">
-                    <a href="#problem">The Problem</a>
                     <a href="#process">The Process</a>
                     <a href="#pricing">Pricing</a>
                     <a href="#contact">Contact</a>

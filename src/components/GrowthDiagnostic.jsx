@@ -217,6 +217,7 @@ const GrowthDiagnostic = () => {
     const [answers, setAnswers] = useState([]);
     const [resultPlan, setResultPlan] = useState(null);
     const [userName, setUserName] = useState('');
+    const [userCompany, setUserCompany] = useState('');
     const [userEmail, setUserEmail] = useState('');
 
     const sendToGHL = async (data) => {
@@ -240,6 +241,7 @@ const GrowthDiagnostic = () => {
         // Send lead to GHL immediately
         sendToGHL({
             name: userName,
+            company: userCompany,
             email: userEmail,
             source: 'growth_diagnostic',
             step: 'email_captured',
@@ -278,6 +280,7 @@ const GrowthDiagnostic = () => {
                 // Send complete data to GHL
                 sendToGHL({
                     name: userName,
+                    company: userCompany,
                     email: userEmail,
                     source: 'growth_diagnostic',
                     step: 'quiz_completed',
@@ -302,6 +305,7 @@ const GrowthDiagnostic = () => {
         setAnswers([]);
         setResultPlan(null);
         setUserName('');
+        setUserCompany('');
         setUserEmail('');
     };
 
@@ -346,6 +350,22 @@ const GrowthDiagnostic = () => {
                                 After the diagnostic, we will build your personalized acquisition plan and send the full breakdown to your inbox. No spam. No sales calls unless you ask.
                             </p>
                             <form className="gd-email-form" onSubmit={proceedToQuiz}>
+                                <input
+                                    type="text"
+                                    className="gd-email-input"
+                                    placeholder="Your Name"
+                                    value={userName}
+                                    onChange={(e) => setUserName(e.target.value)}
+                                    required
+                                />
+                                <input
+                                    type="text"
+                                    className="gd-email-input"
+                                    placeholder="Your Company"
+                                    value={userCompany}
+                                    onChange={(e) => setUserCompany(e.target.value)}
+                                    required
+                                />
                                 <input
                                     type="email"
                                     className="gd-email-input"
