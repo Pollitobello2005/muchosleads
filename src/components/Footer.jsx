@@ -73,6 +73,7 @@ const Footer = () => {
                 <div className="footer-bottom">
                     <p>© 2026 MuchosLeads. All rights reserved.</p>
                     <div className="legal-links">
+                        <Link to="/jobs">Careers</Link>
                         <Link to="/privacy">Privacy Policy</Link>
                         <Link to="/terms">Terms of Service</Link>
                     </div>
