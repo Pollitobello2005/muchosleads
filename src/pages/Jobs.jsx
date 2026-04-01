@@ -11,13 +11,6 @@ const Jobs = () => {
 
     const positions = [
         {
-            title: "Senior Growth Strategist",
-            department: "Client Acquisition",
-            type: "Full-Time",
-            location: "Remote / Mexico City",
-            description: "Lead comprehensive growth strategies for our highest-tier B2B accounts. You will design outbound infrastructures and analyze data to optimize client results."
-        },
-        {
             title: "Full-Stack Engineer",
             department: "Engineering",
             type: "Full-Time",
@@ -29,7 +22,30 @@ const Jobs = () => {
             department: "Sales",
             type: "Full-Time",
             location: "Remote",
-            description: "Drive predictable revenue growth by executing targeted multichannel outreach. You will be the front-line ambassador for our brand, engaging enterprise prospects."
+            description: (
+                <>
+                    <p style={{ marginBottom: '12px' }}>
+                        Drive predictable revenue growth by executing targeted, multi-channel outbound campaigns. As the front-line ambassador for our brand, you will engage C-level executives and key decision-makers within enterprise target accounts. We operate on a highly systematic, data-driven sales methodology rather than relying on volume without strategy.
+                    </p>
+                    <div style={{ marginBottom: '12px' }}>
+                        <strong style={{ display: 'block', color: '#1e293b', marginBottom: '8px' }}>Core Responsibilities:</strong>
+                        <ul style={{ paddingLeft: '20px', margin: '0' }}>
+                            <li style={{ marginBottom: '6px' }}>Execute hyper-personalized sequences across Email, LinkedIn, and Calls utilizing our internal automation infrastructure.</li>
+                            <li style={{ marginBottom: '6px' }}>Manage complex pipelines and qualify inbound/outbound leads against strict strategic criteria before hand-off.</li>
+                            <li style={{ marginBottom: '6px' }}>Analyze campaign response data to iteratively test messaging angles and improve conversion metrics.</li>
+                            <li style={{ marginBottom: '6px' }}>Maintain absolute CRM hygiene (HubSpot/GoHighLevel) for accurate pipeline forecasting.</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <strong style={{ display: 'block', color: '#1e293b', marginBottom: '8px' }}>Requirements & Profile:</strong>
+                        <ul style={{ paddingLeft: '20px', margin: '0' }}>
+                            <li style={{ marginBottom: '6px' }}>Proven track record of quota achievement in high-ticket B2B service or SaaS environments.</li>
+                            <li style={{ marginBottom: '6px' }}>Deep operational proficiency with intent-based prospecting tools (Apollo.io, Instantly, Sales Navigator).</li>
+                            <li style={{ marginBottom: '6px' }}>Elite bilingual communication skills (English & Spanish), tailored specifically for executive-level business communication.</li>
+                        </ul>
+                    </div>
+                </>
+            )
         }
     ];
 
@@ -87,7 +103,7 @@ const Jobs = () => {
                                             <span className="meta-tag type">{job.type}</span>
                                         </div>
                                         <h3 className="position-title">{job.title}</h3>
-                                        <p className="position-desc">{job.description}</p>
+                                        <div className="position-desc">{job.description}</div>
                                     </div>
                                     <div className="position-action">
                                         <a href={`mailto:coralie@muchosleads.mx?subject=Application:%20${encodeURIComponent(job.title)}`} className="apply-btn">
