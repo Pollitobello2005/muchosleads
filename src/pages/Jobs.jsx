@@ -18,30 +18,20 @@ const Jobs = () => {
             description: "Build and maintain the robust automation pipelines and internal tooling that power our acquisition systems. Experience with React, Node.js and workflow automations (n8n, Make) required."
         },
         {
-            title: "B2B Sales Development Representative (SDR)",
+            title: "Elite B2B Sales Executive (SRv2B)",
             department: "Sales",
-            type: "Full-Time",
-            location: "Remote",
+            type: "100% Commission",
+            location: "Remote (US/LATAM)",
             description: (
                 <>
                     <p style={{ marginBottom: '12px' }}>
                         Drive predictable revenue growth by executing targeted, multi-channel outbound campaigns. As the front-line ambassador for our brand, you will engage C-level executives and key decision-makers within enterprise target accounts. We operate on a highly systematic, data-driven sales methodology rather than relying on volume without strategy.
                     </p>
                     <div style={{ marginBottom: '12px' }}>
-                        <strong style={{ display: 'block', color: '#1e293b', marginBottom: '8px' }}>Core Responsibilities:</strong>
+                        <strong style={{ display: 'block', color: '#1e293b', marginBottom: '8px' }}>Core Focus:</strong>
                         <ul style={{ paddingLeft: '20px', margin: '0' }}>
-                            <li style={{ marginBottom: '6px' }}>Execute hyper-personalized sequences across Email, LinkedIn, and Calls utilizing our internal automation infrastructure.</li>
-                            <li style={{ marginBottom: '6px' }}>Manage complex pipelines and qualify inbound/outbound leads against strict strategic criteria before hand-off.</li>
-                            <li style={{ marginBottom: '6px' }}>Analyze campaign response data to iteratively test messaging angles and improve conversion metrics.</li>
-                            <li style={{ marginBottom: '6px' }}>Maintain absolute CRM hygiene (HubSpot/GoHighLevel) for accurate pipeline forecasting.</li>
-                        </ul>
-                    </div>
-                    <div>
-                        <strong style={{ display: 'block', color: '#1e293b', marginBottom: '8px' }}>Requirements & Profile:</strong>
-                        <ul style={{ paddingLeft: '20px', margin: '0' }}>
-                            <li style={{ marginBottom: '6px' }}>Proven track record of quota achievement in high-ticket B2B service or SaaS environments.</li>
-                            <li style={{ marginBottom: '6px' }}>Deep operational proficiency with intent-based prospecting tools (Apollo.io, Instantly, Sales Navigator).</li>
-                            <li style={{ marginBottom: '6px' }}>Elite bilingual communication skills (English & Spanish), tailored specifically for executive-level business communication.</li>
+                            <li style={{ marginBottom: '6px' }}>Manage high-ticket pipelines ($5,000+ USD average deal size).</li>
+                            <li style={{ marginBottom: '6px' }}>Execute hyper-personalized outreach driving US market penetration.</li>
                         </ul>
                     </div>
                 </>
@@ -106,9 +96,9 @@ const Jobs = () => {
                                         <div className="position-desc">{job.description}</div>
                                     </div>
                                     <div className="position-action">
-                                        <a href={`mailto:coralie@muchosleads.mx?subject=Application:%20${encodeURIComponent(job.title)}`} className="apply-btn">
-                                            Apply Now &rarr;
-                                        </a>
+                                        <Link to="/jobs/sales-representative" className="apply-btn">
+                                            View Full Details &rarr;
+                                        </Link>
                                     </div>
                                 </div>
                             ))}

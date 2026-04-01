@@ -15,6 +15,7 @@ import FloatingWhatsApp from './components/FloatingWhatsApp';
 import PrivacyPolicy from './pages/PrivacyPolicy';
 import TermsOfService from './pages/TermsOfService';
 import Jobs from './pages/Jobs';
+import JobDetails from './pages/JobDetails';
 import ErrorBoundary from './components/ErrorBoundary';
 import SEO from './components/SEO';
 import './index.css';
@@ -69,11 +70,13 @@ function App() {
             <Routes>
                 <Route path="/" element={<LandingPage />} />
                 <Route path="/privacy" element={<PrivacyPolicy />} />
-                <Route path="/terms" element={<TermsOfService />} />                <Route path="/jobs" element={<Jobs />} />                <Route path="*" element={<Navigate to="/" replace />} />
+                <Route path="/terms" element={<TermsOfService />} />                <Route path="/jobs" element={<Jobs />} />                <Route path="/jobs/sales-representative" element={<JobDetails />} />
+                <Route path="*" element={<Navigate to="/" replace />} />
             </Routes>
         </ErrorBoundary>
     );
 }
 
 export default App;
+
 
