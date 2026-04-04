@@ -16,27 +16,32 @@ const Jobs = () => {
             department: "Engineering",
             type: "Full-Time",
             location: "Remote",
-            description: "Build and maintain the robust automation pipelines and internal tooling that power our acquisition systems. Experience with React, Node.js and workflow automations (n8n, Make) required."
+            description: "Build and maintain the robust automation pipelines and internal tooling that power our acquisition systems. Experience with React, Node.js and workflow automations (n8n, Make) required.",
+            isExternal: true,
+            actionLink: "https://wa.me/523344577874?text=Hola,%20quisiera%20aplicar%20para%20la%20vacante%20de%20Full-Stack%20Engineer.",
+            actionLabel: "Apply via WhatsApp \u2192"
         },
         {
-            title: "Elite B2B Sales Executive (SRv2B)",
+            title: "Elite B2B Appointment Setter (SDR)",
             department: "Sales",
             type: "100% Commission",
-            location: "Remote (US/LATAM)",
+            location: "Remote (LATAM)",
             description: (
                 <>
                     <p style={{ marginBottom: '12px' }}>
-                        Drive predictable revenue growth by executing targeted, multi-channel outbound campaigns. As the front-line ambassador for our brand, you will engage C-level executives and key decision-makers within enterprise target accounts. We operate on a highly systematic, data-driven sales methodology rather than relying on volume without strategy.
-                    </p>
+                        Conviértete en la punta de lanza de nuestro crecimiento prospectando y abriendo oportunidades con directivos y C-levels. Tu objetivo es simple pero vital: romper el hielo, despertar interés y agendar la primera reunión de ventas dentro del mercado B2B.</p>
                     <div style={{ marginBottom: '12px' }}>
                         <strong style={{ display: 'block', color: '#1e293b', marginBottom: '8px' }}>Core Focus:</strong>
                         <ul style={{ paddingLeft: '20px', margin: '0' }}>
-                            <li style={{ marginBottom: '6px' }}>Manage high-ticket pipelines ($5,000+ USD average deal size).</li>
-                            <li style={{ marginBottom: '6px' }}>Execute hyper-personalized outreach driving US market penetration.</li>
+                            <li style={{ marginBottom: '6px' }}>Generación masiva de pipeline y <em>appointment setting</em> en LinkedIn.</li>
+                            <li style={{ marginBottom: '6px' }}>Filtro de leads y transición de conversaciones en citas calificadas.</li>
                         </ul>
                     </div>
                 </>
-            )
+            ),
+            isExternal: false,
+            actionLink: "/jobs/sales-representative",
+            actionLabel: "View Details \u2192"
         }
     ];
 
@@ -97,18 +102,24 @@ const Jobs = () => {
                                         <div className="position-desc">{job.description}</div>
                                     </div>
                                     <div className="position-action">
-                                        <Link to="/jobs/sales-representative" className="apply-btn">
-                                            View Full Details &rarr;
-                                        </Link>
+                                        {job.isExternal ? (
+                                            <a href={job.actionLink} target="_blank" rel="noopener noreferrer" className="apply-btn">
+                                                {job.actionLabel}
+                                            </a>
+                                        ) : (
+                                            <Link to={job.actionLink} className="apply-btn">
+                                                {job.actionLabel}
+                                            </Link>
+                                        )}
                                     </div>
                                 </div>
                             ))}
                         </div>
-                        
+
                         <div className="spontaneous-application">
                             <h3>Don't see a fit?</h3>
                             <p>We are always looking for exceptional talent. If you believe you belong here, send us your resume and tell us how you can impact our growth.</p>
-                            <a href="mailto:coralie@muchosleads.mx?subject=Spontaneous%20Application" className="secondary-apply-btn">Submit Spontaneous Application</a>
+                            <a href="https://wa.me/523344577874?text=Hi%20MuchosLeads!%20I'd%20love%20to%20submit%20a%20spontaneous%20application:%20" target="_blank" rel="noopener noreferrer" className="secondary-apply-btn">Submit via WhatsApp</a>
                         </div>
                     </div>
                 </section>
@@ -120,3 +131,8 @@ const Jobs = () => {
 };
 
 export default Jobs;
+
+
+
+
+
